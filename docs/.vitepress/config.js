@@ -71,6 +71,13 @@ module.exports = {
                         {text: 'CSS样式(1):页面加载进度条', link: '/blogs/CSS/css(1)'},
                          
                     ]
+                },   {
+                    text: '资源分享',
+                    collapsible: true,
+                    items: [
+                        {text: '地球科学数据库', link: '/blogs/ResourceShare/RS1'},
+                         
+                    ]
                 }
             ],
             
