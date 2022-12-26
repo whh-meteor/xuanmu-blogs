@@ -64,14 +64,16 @@ module.exports = {
                          {text: 'Openlayers记录(7):相交分析', link: '/blogs/Openlayers/Openlayers(7)'},
                          {text: 'Openlayers记录(8):Ol+Vue', link: '/blogs/Openlayers/Openlayers(8)'},
                     ]
-                },   {
+                }, 
+                  {
                     text: 'CSS',
                     collapsible: true,
                     items: [
                         {text: 'CSS样式(1):页面加载进度条', link: '/blogs/CSS/css(1)'},
                          
                     ]
-                },   {
+                }, 
+                  {
                     text: '资源分享',
                     collapsible: true,
                     items: [
