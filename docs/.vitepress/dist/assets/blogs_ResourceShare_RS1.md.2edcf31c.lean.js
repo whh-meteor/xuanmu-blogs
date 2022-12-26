@@ -1,1 +1,0 @@
-import{_ as t,o as r,c as d,a as e}from"./app.c5d936d4.js";const i=JSON.parse('{"title":"地球科学资源","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/ResourceShare/RS1.md"}'),a={name:"blogs/ResourceShare/RS1.md"},o=e("",2),n=[o];function h(w,s,l,p,g,c){return r(),d("div",null,n)}const b=t(a,[["render",h]]);export{i as __pageData,b as default};
