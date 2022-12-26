@@ -3,7 +3,7 @@ module.exports = {
     description: 'WebGIS开发从入门到进阶，这里都有',
     lang: 'zh-CN',
     // github pages 配置
-    base: '/lzugis-blogs/',
+    base: '/xuanmu-blogs/',
     head: [
         // 添加图标
         ['link', { rel: 'icon', href: '/logo.png' }]

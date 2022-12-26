@@ -1,5 +1,5 @@
 {
-  "name": "lzugis-blogs",
+  "name": "xuanmu-blogs",
   "version": "1.0.0",
   "description": "gn",
   "main": "index.js",
@@ -20,6 +20,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/lzugis15/lzugis-blogs.git"
+    "url": "https://gitee.com/lzugis15/xuanmu-blogs.git"
   }
 }
