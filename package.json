@@ -9,6 +9,7 @@
   "devDependencies": {
     "sass": "^1.57.1",
     "vitepress": "^1.0.0-alpha.32",
+    "vitepress-plugin-autobar": "^1.0.8",
     "vue-particles": "^1.0.9"
   },
   "scripts": {
@@ -22,5 +23,8 @@
   "repository": {
     "type": "git",
     "url": "https://gitee.com/lzugis15/xuanmu-blogs.git"
+  },
+  "dependencies": {
+    "tslib": "^2.4.1"
   }
 }
