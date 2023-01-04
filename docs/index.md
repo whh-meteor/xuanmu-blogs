@@ -5,22 +5,26 @@ hero:
   text: 自由 平等 公正 法制
   tagline: 爱国 敬业 诚信 友善
   image:
-    src: image.png
+    src: 木马1.png
     alt: image
   actions:
     - theme: brand
       text: 进入学习
       link: /blogs/
+    - theme: alt
+      text: View on Gitee
+      link: https://gitee.com/martleth/xuanmu-blogs
 features:
-- icon: 基础
-  title: Web基础
+- icon: 🔋
+  title: Web 服务
   details: GIS基础、WEB基础、相关操作以及WebGIS框架...
 
-- icon: 实战
+- icon: 🔧
   title: Web项目实战
   details: 台风路径展示完整案例，需求分析、编码实现...
 
-- icon: 进阶
+- icon: 🚀
   title: 掌握更多的WebGIS技能
   details: WebGIS原理、SDK开发、geotools、postgis...
 ---
+<!-- <div style="color: red; font-size: 24px;">这是个有style的随便写点</div> -->
