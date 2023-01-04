@@ -1,0 +1,1 @@
+import"./chunks/PageView.vue_vue_type_style_index_0_scoped_a51dc05e_lang.4ed993c7.js";import{o as t,c as e}from"./app.cf1f1b46.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/Block/Button.md"}'),o={name:"blogs/Block/Button.md"},l=Object.assign(o,{setup(a){return(r,s)=>(t(),e("div"))}});export{_ as __pageData,l as default};

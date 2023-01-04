@@ -99,7 +99,8 @@ module.exports = {
                         ]
                     }
                 ],
-                '/知识库/':[],//！根据不同的路径前缀显示不同的侧边栏
+                '/knowledge/':[],//！根据不同的路径前缀显示不同的侧边栏。 
+                '/idea/':[],
 
             },
 
@@ -124,7 +125,7 @@ module.exports = {
 
             // 页面底部
             footer: {
-                message: '旋木博客  ',
+                message: '',
                 copyright: 'Copyright © 2023 xuanmu'
             }
         }
