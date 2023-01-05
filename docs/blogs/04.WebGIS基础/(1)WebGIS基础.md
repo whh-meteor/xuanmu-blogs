@@ -42,7 +42,7 @@
 </body>
 </html>
 ```
-<page-view :url="'../../public/www/map.html'" />
+<page-view :url="'../../www/map.html'" />
 
 <script setup>
 import PageView from '../../components/PageView.vue'
