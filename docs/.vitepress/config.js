@@ -3,6 +3,7 @@ module.exports = {
     title: '旋木-Blogs',
     description: 'WebGIS开发从入门到进阶，这里都有',
     lang: 'zh-CN',
+    ignoreDeadLinks: true,//忽略dead link
     // github pages 配置
     base: '/xuanmu-blogs/',
     head: [
