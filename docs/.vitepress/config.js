@@ -62,7 +62,21 @@ module.exports = {
                  
                 '/blogs/':getSideBar("./docs/blogs/",{  ignoreMDFiles : [ 'index' ] , 
                 ignoreDirectory : [ 'node_modules' ]  },  "/blogs/" ),
-                '/knowledge/':getSideBar("./docs/Knowledge/",{},"/Knowledge/")
+                '/knowledge/':getSideBar("./docs/knowledge/",{},"/knowledge/"),
+                '/idea/':getSideBar("./docs/idea/",{},"/idea/")
+                // '/knowledge/': [
+                //     {
+                //         text: '博客目录',
+                //         collapsible: true,
+                //         items: [
+                //             { text: '概述', link: '/knowledge/' },
+                //             { text: 'WebGIS基础', link: '/knowledge/index' },
+                //             { text: '项目实战', link: '/knowledge/index' },
+                //             { text: '高级进阶', link: '/knowledge/index' },
+                //             { text: 'btn', link: '/knowledge/01.测试/1' },
+
+                //         ]
+                //     }]
             },
             
             //getSideBar("./docs"),

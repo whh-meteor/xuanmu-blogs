@@ -17,17 +17,17 @@ hero:
 features:
 - icon: 🔋
   title: 笔记
-  details: GIS基础、WEB基础、相关操作以及WebGIS框架...
+  details: 开发框架、笔记、技术文档、相关操作以及WebService框架...
   link: /blogs/
 
 - icon: 🔧
   title: 知识库
-  details: 台风路径展示完整案例，需求分析、编码实现...
-  link: /knowledge/
+  details: GIS基础、WEB基础、语法知识、基础等...
+  link: /knowledge/index
 
 - icon: 🚀
   title: 一些想法
-  details: WebGIS原理、SDK开发、geotools、postgis...
-  link: /idea/
+  details: 记录一些不成熟的想法～...
+  link: /idea/index
 ---
 <!-- <div style="color: red; font-size: 24px;">这是个有style的随便写点</div> -->
