@@ -2,7 +2,7 @@
 layout: home
 hero:
   name:   旋木 
-  text: 道路是曲折的，前途是光明的。
+  text: 人生海海，山山而川，不过尔尔。
   tagline: 更多内容正在更新中...
   image:
     src: 木马1.png
