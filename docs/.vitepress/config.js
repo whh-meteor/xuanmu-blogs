@@ -62,8 +62,10 @@ module.exports = {
                  
                 '/blogs/':getSideBar("./docs/blogs/",{  ignoreMDFiles : [ 'index' ] , 
                 ignoreDirectory : [ 'node_modules' ]  },  "/blogs/" ),
-                '/knowledge/':getSideBar("./docs/knowledge/",{},"/knowledge/"),
-                '/idea/':getSideBar("./docs/idea/",{},"/idea/")
+                '/knowledge/':getSideBar("./docs/knowledge/",{ ignoreMDFiles : [ 'index' ] , 
+                ignoreDirectory : [ 'node_modules' ] },"/knowledge/"),
+                '/idea/':getSideBar("./docs/idea/",{ ignoreMDFiles : [ 'index' ] , 
+                ignoreDirectory : [ 'node_modules' ] },"/idea/")
                 // '/knowledge/': [
                 //     {
                 //         text: '博客目录',
