@@ -116,7 +116,7 @@
   
   <style lang="scss" scoped>
   .page__x {
-    width: 1000px;
+    width: 700px;
     height: 700px;
     /* 居中布局 */
     display: flex;

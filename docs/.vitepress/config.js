@@ -1,4 +1,6 @@
 import { getSideBar } from 'vitepress-plugin-autobar'
+import {createSvgIconsPlugin} from 'vite-plugin-svg-icons';
+import path from 'path';
 module.exports = {
     title: '旋木-Blogs',
     description: 'WebGIS开发从入门到进阶，这里都有',
@@ -10,7 +12,9 @@ module.exports = {
         // 添加图标
         ['link', { rel: 'icon', href: '/木马1.png' }]
     ],
-    plugins: ['autobar'],
+    plugins: ['autobar',
+   
+    ],
     themeConfig: {
         // 展示搜索框
         algolia: {
