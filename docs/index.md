@@ -13,7 +13,7 @@ hero:
       link: /blogs/
     - theme: alt
       text: View on Gitee
-      link: https://gitee.com/martleth/xuanmu-blogs
+      link: https://gitee.com/martleth/xuanmu-blogs/pages
 features:
 - icon: 🔋
   title: 笔记
