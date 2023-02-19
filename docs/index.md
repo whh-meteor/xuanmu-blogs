@@ -2,7 +2,7 @@
 layout: home
 hero:
   name:   旋木 
-  text: 人生海海，山山而川，不过尔尔。
+  text: 人生海海，山山而川。
   tagline: 更多内容正在更新中...
   image:
     src: 木马1.png
@@ -31,6 +31,7 @@ features:
   link: /idea/index
 ---
 <!-- <div style="color: red; font-size: 24px;">这是个有style的随便写点</div> -->
-<div><img src="/wave.svg" style="border: 0px solid steelblue;margin-top:-5%" /></div>
+<!-- <div><img src="/wave.svg" style="border: 0px solid steelblue;margin-top:-20%" /></div> -->
 
 
+<!-- <FreeStyle></FreeStyle> -->
