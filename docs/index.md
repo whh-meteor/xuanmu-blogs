@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name:   旋木 
+  name: 旋木 
   text: 人生海海，山山而川。
   tagline: 更多内容正在更新中...
   image:
@@ -17,17 +17,17 @@ hero:
 features:
 - icon: 🔋
   title: 笔记
-  details: 开发框架、笔记、技术文档、相关操作以及WebService框架...
+  details: 站在巨人的肩膀上。
   link: /blogs/
 
 - icon: 🔧
   title: 知识库
-  details: GIS基础、WEB基础、语法知识、基础等...
+  details: 知识就是力量！
   link: /knowledge/index
 
 - icon: 🚀
   title: 一些想法
-  details: 记录一些不成熟的想法～...
+  details: 我思故我在
   link: /idea/index
   
   

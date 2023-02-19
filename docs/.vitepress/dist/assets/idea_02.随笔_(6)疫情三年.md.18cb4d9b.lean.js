@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a,a as _}from"./app.2a13895e.js";const f=JSON.parse('{"title":"疫情三年","description":"","frontmatter":{},"headers":[],"relativePath":"idea/02.随笔/(6)疫情三年.md"}'),s={name:"idea/02.随笔/(6)疫情三年.md"},c=_("",7),o=[c];function p(r,d,i,n,l,h){return t(),a("div",null,o)}const u=e(s,[["render",p]]);export{f as __pageData,u as default};
