@@ -10,7 +10,7 @@ export default {
     ...Theme,
     Layout() {
         return h(Theme.Layout, null, {
-          'home-hero-before': () => h(HeroBefore)
+          'home-features-after': () => h(HeroBefore)
         })
       },
     enhanceApp({ app }) {

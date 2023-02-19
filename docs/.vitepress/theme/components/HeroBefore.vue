@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-<div><img src="/wave.svg" style="border: 0px solid steelblue;margin-bottom:-40%;" /></div>
+<div>
+  <img src="/wave.svg" style="width: 100%;margin-top: -30%;" />
+</div>
 
 </template>
 

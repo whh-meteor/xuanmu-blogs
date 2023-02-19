@@ -29,9 +29,11 @@ features:
   title: 一些想法
   details: 记录一些不成熟的想法～...
   link: /idea/index
+  
+  
 ---
 <!-- <div style="color: red; font-size: 24px;">这是个有style的随便写点</div> -->
-<!-- <div><img src="/wave.svg" style="border: 0px solid steelblue;margin-top:-20%" /></div> -->
+<!-- <div><img src="/wave.svg" style="border: 0px solid steelblue;margin-top:0" /></div> -->
 
 
 <!-- <FreeStyle></FreeStyle> -->
