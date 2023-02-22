@@ -12,4 +12,3 @@
 <script setup>
 import Parallax from '../components/Parallax.vue'
 </script>
-<!-- ![](img/index/img-2023-02-02-20-44-47.png) -->
