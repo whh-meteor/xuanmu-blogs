@@ -3,7 +3,7 @@ layout: home
 hero:
   name: 旋木 
   text: 人生海海，山山而川。
-  tagline: 更多内容正在更新中...
+  tagline: 更多内容正在更新中
   image:
     src: 木马1.png
     alt: image
