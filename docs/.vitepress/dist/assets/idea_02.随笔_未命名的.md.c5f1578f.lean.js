@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a,d as o}from"./app.0b354b5c.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"idea/02.随笔/未命名的.md"}'),s={name:"idea/02.随笔/未命名的.md"},n=o("p",null,"123123123123",-1),r=[n];function _(c,d,i,p,l,m){return t(),a("div",null,r)}const h=e(s,[["render",_]]);export{u as __pageData,h as default};
