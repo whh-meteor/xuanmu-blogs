@@ -1,6 +1,9 @@
 name: Sync
 
-on: page_build
+# on: page_build
+on:
+  branch_protection_rule:
+    types: [created,edited, deleted]
 
 jobs:
   build:
