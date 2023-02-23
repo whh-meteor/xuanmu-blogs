@@ -17,4 +17,4 @@ jobs:
         REPO: self
         BRANCH: gh-pages
         FOLDER: docs/.vitepress/dist
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
