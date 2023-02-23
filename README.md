@@ -1,25 +1,38 @@
 # xuanmu-blogs
 
-## 介绍
+## 1 介绍
 
  该博客主要用于个人使用。内容不限于个人经验，网络教程，如内容侵权请联系v：xuanmu9878！
 
-## 软件架构
+## 2 软件架构
 vitepress、Gitee
 
+## 3 安装教程
+### 3.1 vscode 插件安装
+Paste Image、Markdown Previre Github、Markdown All in One
 
-## 安装教程
-### vscode 插件安装
-、Paste Image、Markdown Previre Github、Markdown All in One
-### 使用命令
+Paste Image配置：
+
+    Paste Image: Name Prefix
+    The string prepend to the image file name.
+```
+img-
+```
+    Paste Image: Path
+    The destination to save image file.You can use variable ${currentFileDir} and ${projectRoot}. ${currentFileDir} will be replace by the path of directory that contain current editing file. ${projectRoot} will be replace by path of the project opened in vscode.
+```
+${currentFileDir}/img/${currentFileNameWithoutExt}
+```
+### 3.2 使用命令
 1.  git clone 
 2.  npm install 
+    执行该命令如果报错 删除node_modules文件后重新下载依赖
 3.   npm run build
 4.   npm run serve
 
-## 使用说明
+## 4 使用说明
 
-### 组件修改 
+### 4.1 组件修改 
    自动生成目录组件 vitepress-plugin-autobar
 
    加入第三个参数 SeconDir
@@ -87,12 +100,11 @@ vitepress、Gitee
                 ignoreDirectory : [ 'node_modules' ] },"/idea/")
             },
    ```
-### 样式修改：
+### 4.2 样式修改：
     在docs/.vitepress/theme/style
-3.  npm run dev 测试环境
-4.  npm run serve 发布环境
+ 
 
-## 参与贡献
+## 5 参与贡献
 
 1.  旋木：页面搭建、日常维护、内容更新 E-mail： martleth@163.com
 
