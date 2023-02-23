@@ -6,7 +6,8 @@
 
 ## 2 软件架构
 vitepress、Gitee
-
+### 2.1 与github仓库同步
+    
 ## 3 安装教程
 ### 3.1 vscode 插件安装
 Paste Image、Markdown Previre Github、Markdown All in One
