@@ -177,9 +177,9 @@ module.exports = {
             // },
 
             // 页面底部
-            footer: {
-                message: '',
-                copyright: 'Copyright © 2023 xuanmu'
-            }
+            // footer: {
+            //     message: '',
+            //     copyright: 'Copyright © 2023 xuanmu'
+            // }
         }
     }
