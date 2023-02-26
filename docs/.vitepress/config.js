@@ -7,7 +7,8 @@ module.exports = {
     lang: 'zh-CN',
     ignoreDeadLinks: true,//忽略dead link
     // github pages 配置
-    base: '/xuanmu-blogs/',
+    // base: '/xuanmu-blogs/',
+    base: '/',
     head: [
         // 添加图标
         ['link', { rel: 'icon', href: '/木马1.png' }]
