@@ -1,11 +1,11 @@
 {
   "hash": "91798680",
-  "browserHash": "332e8bca",
+  "browserHash": "e745c12f",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "0ba312f4",
+      "fileHash": "3a64c0ab",
       "needsInterop": false
     },
     "axios": {
@@ -13,7 +13,17 @@
       "file": "axios.js",
       "fileHash": "55d7f2f9",
       "needsInterop": false
+    },
+    "vuex": {
+      "src": "../../../../node_modules/vuex/dist/vuex.esm-bundler.js",
+      "file": "vuex.js",
+      "fileHash": "8b0c4453",
+      "needsInterop": false
     }
   },
-  "chunks": {}
+  "chunks": {
+    "chunk-3T6VSYDD": {
+      "file": "chunk-3T6VSYDD.js"
+    }
+  }
 }

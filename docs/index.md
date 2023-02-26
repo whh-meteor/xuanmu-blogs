@@ -31,9 +31,11 @@ features:
   link: /idea/index
 ---
 <TheProject />
-<script setup>
+ 
+<script setup >
 import TheProject from './components/Project.vue'
 </script>
+ 
 <!-- <div style="color: red; font-size: 24px;">这是个有style的随便写点</div> -->
 <!-- <div><img src="/wave.svg" style="border: 0px solid steelblue;margin-top:0" /></div> -->
 

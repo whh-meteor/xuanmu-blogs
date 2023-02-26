@@ -1,7 +1,9 @@
 import { getSideBar } from 'vitepress-plugin-autobar'
 import {createSvgIconsPlugin} from 'vite-plugin-svg-icons';
 import path from 'path';
+
 module.exports = {
+ 
     title: '旋木博客',
     description: '人生海海 ，山山而川。',
     lang: 'zh-CN',
