@@ -8,7 +8,7 @@ const demo = [
     link: "https://gitee.com/martleth/xuanmu-blogs",
     pre: "https://martleth.gitee.io/xuanmu-blogs/",
     href: "/blogs/04.Web基础/博客架构",
-    img: "/IMG_1450.JPG",
+    img: "assets/snow.jpg",
 
   },
 //   {

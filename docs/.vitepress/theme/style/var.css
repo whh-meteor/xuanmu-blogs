@@ -19,6 +19,14 @@
   
     --vp-button-brand-active-border: #F6CEEC;
 
-    /**背景**/
-    --vp-home-background-image: #D939CD
+   
   }
+/* 
+  body{
+    background-image:url("cat-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size:cover;
+
+     backdrop-filter: blur(10px);  
+  } */
