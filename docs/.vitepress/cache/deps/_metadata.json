@@ -1,17 +1,17 @@
 {
-  "hash": "47e17e9d",
-  "browserHash": "549302cc",
+  "hash": "91798680",
+  "browserHash": "332e8bca",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "c789ca72",
+      "fileHash": "0ba312f4",
       "needsInterop": false
     },
     "axios": {
       "src": "../../../../node_modules/axios/index.js",
       "file": "axios.js",
-      "fileHash": "0337e061",
+      "fileHash": "55d7f2f9",
       "needsInterop": false
     }
   },
