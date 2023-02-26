@@ -29,7 +29,7 @@ module.exports = {
             // 网站 logo
             logo: '木马1.png',
             // 网站标题
-            siteTitle: '博客首页',
+            siteTitle: '旋木',
             // 启动页面丝滑滚动
             smoothScroll: true,
             // 社交账户链接

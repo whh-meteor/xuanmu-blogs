@@ -2,8 +2,8 @@
 layout: home
 hero:
   name: 旋木 
-  text: 人生海海，山山而川。
-  tagline: 更多内容正在更新中
+  text: Hi, I'm Xuan Mu 👋
+  tagline: 一个正在学习的coder
   image:
     src: 木马1.png
     alt: image
@@ -29,6 +29,7 @@ features:
   title: 一些想法
   details: 我思故我在
   link: /idea/index
+  
 ---
 <TheProject />
  
