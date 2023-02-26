@@ -181,7 +181,7 @@ module.exports = {
 
             // 页面底部
             // footer: {
-            //     message: '',
+            //     message: '<h1>测试</h1>',
             //     copyright: 'Copyright © 2023 xuanmu'
             // }
         }
