@@ -4,7 +4,9 @@ import axios from "axios";
 import FreeStyle from './components/FreeStyle.vue'
 
 import { h } from 'vue'
-import HeroBefore from './components/HeroBefore.vue'
+import FeatureAfter from './components/HeroBefore.vue'
+import HeroBefore from './components/HomeHero.vue'
+
 
 
 
@@ -12,7 +14,8 @@ export default {
     ...Theme,
     Layout() {
         return h(Theme.Layout, null, {
-          'home-features-after': () => h(HeroBefore)
+          'home-features-after': () => h(FeatureAfter),
+          'home-hero-before': () => h(HeroBefore)
         })
       },
     enhanceApp({ app }) {
