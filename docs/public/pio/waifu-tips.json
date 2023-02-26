@@ -58,7 +58,7 @@
         { "selector": "#mail", "text": ["留下你的邮箱，不然就是无头像人士了"] },
         { "selector": "#url", "text": ["你的家在哪里呢，好让我去参观参观"] },
         { "selector": "#textarea", "text": ["认真填写哦，垃圾评论是禁止事项"] },
-        { "selector": ".OwO-logo", "text": ["要插入一个表情吗"] },
+        { "selector": ".OwO-logo", "text": ["要加入一个表情吗"] },
         { "selector": "#csubmit", "text": ["要[提交]^(Commit)了吗，首次评论需要审核，请耐心等待~"] },
         { "selector": ".ImageBox", "text": ["点击图片可以放大呢"] },
         { "selector": "input[name=s]", "text": ["找不到想看的内容？搜索看看吧"] },
@@ -94,7 +94,7 @@
         { "date": "06/01", "text": ["<span style=\"color:#0099cc;\">儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"] },
        
         { "date": "09/10", "text": ["<span style=\"color:#0099cc;\">教师节</span>，在学校要给老师问声好呀~"] },
-        { "date": "10/01", "text": ["<span style=\"color:#0099cc;\">国庆节</span>，新中国已经成立69年了呢"] },
+        { "date": "10/01", "text": ["<span style=\"color:#0099cc;\">国庆节</span>，已经成立69年了呢"] },
         { "date": "11/05-11/12", "text": ["今年的<span style=\"color:#0099cc;\">双十一</span>是和谁一起过的呢~"] },
         { "date": "12/20-12/31", "text": ["这几天是<span style=\"color:#0099cc;\">圣诞节</span>，主人肯定又去剁手买买买了~"] }
     ]
