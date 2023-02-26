@@ -27,7 +27,7 @@ module.exports = {
                 faeFilters: ['tags:guide,api']
             }},
             // 网站 logo
-            logo: '/木马1.png',
+            logo: '木马1.png',
             // 网站标题
             siteTitle: '博客首页',
             // 启动页面丝滑滚动
