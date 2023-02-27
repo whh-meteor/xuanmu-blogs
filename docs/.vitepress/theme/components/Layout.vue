@@ -15,7 +15,8 @@ const { Layout } = DefaultTheme
  <Layout>  
    <!-- this is where markdown content will be rendered -->
   <template #doc-footer-before>
-    <Comment v-if="!frontmatter.disableComment" :key="page.relativePath"></Comment>
+    <Comment  :key="page.relativePath"></Comment>
+    <!-- <Comment v-if="!frontmatter.disableComment" :key="page.relativePath"></Comment> -->
 
   </template></Layout>
   
