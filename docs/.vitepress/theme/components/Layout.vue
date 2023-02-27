@@ -17,8 +17,16 @@ const { Layout } = DefaultTheme
   <template #doc-footer-before>
     <Comment  :key="page.relativePath"></Comment>
     <!-- <Comment v-if="!frontmatter.disableComment" :key="page.relativePath"></Comment> -->
+  </template>
+  <template #home-hero-before>
+    <HomeSVG></HomeSVG>
+  </template>
+  <template #home-features-after>
 
-  </template></Layout>
+<fly-fish></fly-fish>
+  </template>
+
+</Layout>
   
  
 </template>

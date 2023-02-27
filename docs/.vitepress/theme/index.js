@@ -2,6 +2,9 @@
 import DefaultTheme from 'vitepress/theme'
 import FreeStyle from './components/FreeStyle.vue'
 import MyLayout from './components/Layout.vue'
+import FlyFish from './components/FlyFish.vue'
+import HomeSVG from './components/HomeSVG.vue'
+
 import './style/var.css'
 export default {
   ...DefaultTheme,
@@ -9,5 +12,7 @@ export default {
   enhanceApp({ app }) {
     // register global components
     app.component('FreeStyle', FreeStyle)
+    app.component('FlyFish', FlyFish)
+    app.component('HomeSVG', HomeSVG)
   }
 }
