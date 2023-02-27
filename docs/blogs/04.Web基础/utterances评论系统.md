@@ -1,9 +1,21 @@
 # utterances评论系统
 
-新建仓库 XbTalks （Xuanmu blogs Talks）
+- 新建仓库 XbTalks （Xuanmu blogs Talks）
 
-安装utterances
+- 安装utterances
 ![](img/utterances评论系统/img-2023-02-27-17-01-09.png)
+
+
+## 选择并生成参数
+```html
+<script src="https://utteranc.es/client.js"
+        repo="whh-meteor/XbTalks"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+```
 
  ## 修改index.js 
  ```javascript

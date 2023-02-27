@@ -31,3 +31,7 @@ https://jsoncrack.com/editor
 ## 选刊
 
 https://www.klxksci.com/
+
+## vitepress 中文文档
+
+https://vitepress.docschina.org/guide/theming.html#registering-global-components

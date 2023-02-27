@@ -2,6 +2,7 @@
 import { onMounted } from 'vue';
 
 onMounted(() => {
+  
   const script = document.createElement('script');
   script.src = 'https://utteranc.es/client.js';
   script.async = true;

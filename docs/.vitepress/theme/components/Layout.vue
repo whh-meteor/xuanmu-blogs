@@ -3,8 +3,9 @@
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Comment from './Comment.vue';
-
+ 
 const { frontmatter } = useData()
+const { page } = useData()
 const { Layout } = DefaultTheme
 </script>
 
@@ -14,7 +15,7 @@ const { Layout } = DefaultTheme
  <Layout>  
    <!-- this is where markdown content will be rendered -->
   <template #doc-footer-before>
-      <Comment v-if="!frontmatter.disableComment" ></Comment>
+    <Comment v-if="!frontmatter.disableComment" :key="page.relativePath"></Comment>
 
   </template></Layout>
   
