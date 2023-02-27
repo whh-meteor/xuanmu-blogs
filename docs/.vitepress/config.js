@@ -19,6 +19,14 @@ module.exports = {
    
     ],
     themeConfig: {
+        website: 'https://github.com/whh-meteor/XbTalks', //copyright link
+        // 评论的仓库地址
+        comment: {
+            repo: 'whh-meteor/XbTalks', //你自己的用户名和仓库名
+            themes: 'github-light',
+            issueTerm: 'pathname',
+            crossorigin:'anonymous'
+        },
         // 展示搜索框
         algolia: {
             appKey: '',
@@ -184,5 +192,6 @@ module.exports = {
             //     message: '<h1>测试</h1>',
             //     copyright: 'Copyright © 2023 xuanmu'
             // }
-        }
+        },
+       
     }
