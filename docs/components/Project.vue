@@ -11,16 +11,16 @@ const demo = [
     img: "assets/snow.jpg",
 
   },
-//   {
-//     name: "用JS写一个群友力扣排行榜",
-//     description:
-//       "使用Vue和node实现群友排行榜,配置nginx跨域调用leetcode官网api获取数据",
-//     tags: ["nodejs", "Vue", "niginx"],
-//     pre: "http://47.97.158.11:8692/leetocde/#/home",
-//     link: "https://github.com/aiai0603/leetcode_rank",
-//     href: "",
-//     img: "/IMG_1450.JPG",
-//   },
+  {
+    name: "基于Docker的PCA和KMeans封装",
+    description:
+      "Docker虚拟容器封装处理算法，提供一个用于交互的HTML界面",
+    tags: ["Docker", "Python", "Flask"],
+    pre: "",
+    link: "https://github.com/whh-meteor/PCA-Kmeans-Docker",
+    href: "/knowledge/遥感/基于PCA和K-Means变化检测",
+    img: "assets/pca-kmeans.jpg",
+  },
 //   {
 //     name: "用Electron实现简单md编辑器",
 //     description: "使用Electron和Vue3实现一个纯前端的markdown格式编辑器",
