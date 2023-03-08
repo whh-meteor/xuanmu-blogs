@@ -33,156 +33,6 @@ R语言的交互式个痛点，在Docker中封装后需要有框架解决交互�
 
 因此我们引入UI框架shiny
 
-### shiny 封装组件
-
-ui.R
-```R
-library(EBImage)
-library(shiny)
-
-shinyUI(navbarPage("Image Processing",
-               
-                   
-                   
-                   tabPanel("Image Filtering",
-                            fluidPage(
-                              sidebarLayout(
-                                 position = "right",
-                                sidebarPanel(
-                                  textInput("url", label = h6("Enter Image URL"), value = "/Users/wanghaihang/Desktop/Docker_R_Image/changemap.jpg"),
-                                  
-                                  sliderInput("lps", label = h6("Low-Pass Filter size"),min = 1, max = 50, value = 21),
-                                  sliderInput("hps", label = h6("High-Pass Filter size"),min = 1, max = 20, value = 10),
-                                  checkboxGroupInput("filt",label = h6("Filter Type"), choices = list("Low-Pass Filter" = 1, "High-Pass Filter" = 2)),              
-                                  checkboxGroupInput("Save1", label = h6(""), choices = list("Save"=1))
-                                ),
-                                
-                                mainPanel(
-                                  imageOutput("img3")
-                                ))
-                            )),
-                   
-                   tabPanel("Morphing",
-                            fluidPage(
-                              sidebarLayout(
-                                position = "right",
-                                sidebarPanel(
-                                  sliderInput("mm", label = h6("Magnitude"),min = 1, max = 50, value = 21),                              
-                                  checkboxGroupInput("morph",label = h6("Morphological Operators"), choices = list("Erode" = 1, "Dilate" = 2)),              
-                                  checkboxGroupInput("Save2", label = h6(""), choices = list("Save"=1))
-                                ),
-                                
-                                mainPanel(
-                                  imageOutput("img4")
-                                ))
-                            ))                 
-))
-
-```
-
-server.R
-```R
-library(EBImage)
-library(shiny)
-
-shinyServer(function(input, output) {
-  
-  output$text <- renderText({
-    # web image
-    #download.file(input$url,"1.jpeg",mode = "wb")
-    #native image
-    img <- readImage(input$url)
-    writeImage(img, "img.jpeg", quality=100)
-    "Image:"
-  })
-  
-   
-  
-   
-  
-  output$img3 <- renderImage({
-    oi2 <- readImage("img.jpeg")
-    if (input$lps>1){
-      if (input$lps %% 2 == 0 ){
-        lps <- input$lps + 1
-      }
-      else {
-        lps <- input$lps
-      }
-    }
-    else {
-      lps <- input$lps
-    }
-    
-    flo <- makeBrush(lps, shape="disc", step=FALSE)^2
-    flo <- flo/sum(flo)
-    fhi <- matrix(1, nc=3, nr=3)
-    fhi[2,2] = -input$hps
-    
-    if (is.null(input$filt)){
-      oi2 <- oi2
-    }
-    else if (input$filt == 1){
-      oi2 <- filter2(oi2, flo)
-    }
-    else if (input$filt == 2){
-      oi2 <- filter2(oi2, fhi)
-    }
-    
-    if (is.null(input$Save1)){
-      oi2 <- oi2
-    }
-    else {
-      writeImage(oi2, "img.jpeg", quality=100)
-    }
-    writeImage(oi2, "img2.jpeg", quality=100)
-    
-    filename <- normalizePath(file.path('./',paste0('img2','.jpeg')))
-    list(src = filename)
-  }, deleteFile = FALSE)
-  
-  output$img4 <- renderImage({
-    oi2 <- readImage("img.jpeg")
-    if (input$mm>1){
-      if (input$mm %% 2 == 0 ){
-        mm <- input$mm + 1
-      }
-      else {
-        mm <- input$mm
-      }
-    }
-    else {
-      mm <- input$mm
-    }
-    
-    kern <- makeBrush(mm, shape="diamond")^2
-    
-    if (is.null(input$morph)){
-      oi2 <- oi2
-    }
-    else if (input$morph == 1){
-      oi2 <-  erode(oi2, kern)
-    }
-    else if (input$morph == 2){
-      oi2 <- dilate(oi2, kern)
-    }
-    
-    if (is.null(input$Save1)){
-      oi2 <- oi2
-    }
-    else {
-      writeImage(oi2, "img.jpeg", quality=100)
-    }
-    writeImage(oi2, "img2.jpeg", quality=100)
-    
-    filename <- normalizePath(file.path('./',paste0('img2','.jpeg')))
-    list(src = filename)
-  }, deleteFile = FALSE)
-  
-  
-})
-```
-
 
 ### 本地测试
 
@@ -200,18 +50,18 @@ shinyServer(function(input, output) {
 
 ## 部署测试
 
-### shiny server
+- shiny server
     封装好的交互组件需要进行部署，不然没有办法在docker中进行使用
     因此我们使用镜像 rocker/r-ver:3.6.3
 
 https://github.com/rocker-org/shiny
 
-### 克隆项目
+-  克隆项目
     `git clone git@github.com:rocker-org/shiny.git`
 把ui.r 和 server .r 在目录中替换
 
 ![](img/R语言封装ecore/img-2023-03-07-14-03-57.png)
-### 拉取镜像
+- 拉取镜像
 把镜像拉取到本地仓库
 
 `docker pull rocker/r-ver:3.6.3`
@@ -255,14 +105,14 @@ COPY shiny-server.sh /usr/bin/shiny-server.sh
 CMD ["/usr/bin/shiny-server.sh"]
 
 ```
-### 执行容器
+- 执行容器
 sudo docker run -itd -p 3838:3838  rshiny/server:v1 
 
 ![](img/R语言封装ecore/img-2023-03-07-15-09-11.png)
 
 容器已经被成功创建
 
-### 挂载应用
+- 挂载应用
   查看文档 需要在执行docker run 的时候使用-v挂载到特定目录上
 
   ![](img/R语言封装ecore/img-2023-03-07-15-10-16.png)
@@ -270,6 +120,8 @@ sudo docker run -itd -p 3838:3838  rshiny/server:v1
   执行命令
   `docker run `
  
+## 但此时无法执行既定程序 ！！
+
 
  ## 重写dockerfile 
 ```docker
@@ -338,10 +190,18 @@ RUN chmod -R 777 /srv/shiny-server
 RUN chmod -R 777 /srv
 ```
 
+  1. 构建镜像
+`sudo docker build -t r_shiny-ebimage:v20 . `    
+2. 执行镜像       
+`sudo docker run -itd -p 3838:3838  r_shiny-ebimage:v20`
+-itd 服务停止不终止容器； -p 映射端口号; 
+
 成功执行程序@！
 ![](img/R语言封装ecore/img-2023-03-08-13-21-57.png)
 
 同时url支持https
+
+
 
 
 # 完整的Dockerfile
