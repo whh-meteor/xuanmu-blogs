@@ -3,7 +3,7 @@ layout: home
 hero:
   name: 旋木 
   text: Hi, I'm Xuan Mu 👋
-  tagline: 一个正在学习的coder
+  tagline: 双二流名校在读非cs冷门专业研究生
   image:
     src: 木马1.png
     alt: image

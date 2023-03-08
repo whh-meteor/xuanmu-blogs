@@ -3,7 +3,12 @@
 - 低通滤波
 - 膨胀
 - 腐蚀
-server.r
+## EBImage文档:
+http://www.bioconductor.org/packages/release/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html
+
+https://www.jb51.net/article/236982.htm
+
+## server.r
 ```r
 library(EBImage)
 library(shiny)
@@ -112,7 +117,7 @@ shinyServer(function(input, output) {
 })
 ```
 
-ui.r
+## ui.r
 ```r
 library(EBImage)
 library(shiny)
@@ -160,3 +165,9 @@ shinyUI(navbarPage("Image Processing",
 
 
 ```
+
+
+
+## 其他
+
+https://zhuanlan.zhihu.com/p/464511400

@@ -21,6 +21,16 @@ const demo = [
     href: "/knowledge/遥感/基于PCA和K-Means变化检测",
     img: "assets/pca-kmeans.jpg",
   },
+  {
+    name: "R语言在线图像处理",
+    description:
+      "由R语言作为后台、Shiny作为UI、Docker作为容器的在线滤波和开闭运算",
+    tags: ["R", "Docker", "Shiny/Shiny-Server"],
+    pre: "http://localhost:3838/",
+    link: "https://github.com/whh-meteor/R_shiny_docker",
+    href: "/blogs/06.Docker/R语言图像处理",
+    img: "assets/R-shiny.jpg",
+  },
 //   {
 //     name: "用Electron实现简单md编辑器",
 //     description: "使用Electron和Vue3实现一个纯前端的markdown格式编辑器",
