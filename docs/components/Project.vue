@@ -30,7 +30,7 @@ const demo = [
     link: "https://github.com/whh-meteor/R_shiny_docker",
     href: "/blogs/06.Docker/R语言图像处理",
     img: "assets/R-shiny.jpg",
-  },
+  }
 //   {
 //     name: "用Electron实现简单md编辑器",
 //     description: "使用Electron和Vue3实现一个纯前端的markdown格式编辑器",
