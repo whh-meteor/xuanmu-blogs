@@ -3,7 +3,7 @@ layout: home
 hero:
   name: 旋木 
   text: Hi, I'm Xuan Mu 👋
-  tagline: 双二流名校在读非cs冷门专业研究生
+  tagline: 双二流名校在读非cs冷门的专业研究生
   image:
     src: 木马1.png
     alt: image
@@ -12,8 +12,8 @@ hero:
       text: Start
       link: /blogs/
     - theme: alt
-      text: View on Gitee
-      link: https://gitee.com/martleth/xuanmu-blogs/pages
+      text: View on Github
+      link: https://github.com/whh-meteor
 features:
 - icon: 🔋
   title: 笔记
