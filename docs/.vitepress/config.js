@@ -84,6 +84,10 @@ module.exports = {
                     text: '想法',
                     link: '/idea/'
                 },
+                {
+                    text: '简历',
+                    link: 'intro'
+                },
                 // {
                 //     text: '友情链接',
                 //     items: [
