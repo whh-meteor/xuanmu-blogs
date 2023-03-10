@@ -86,7 +86,7 @@ module.exports = {
                 },
                 {
                     text: '简历',
-                    link: 'intro'
+                    link: '/Introduction'
                 },
                 // {
                 //     text: '友情链接',
