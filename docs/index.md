@@ -7,6 +7,7 @@ hero:
   image:
     src: 木马1.png
     alt: image
+ 
   actions:
     - theme: brand
       text: Start

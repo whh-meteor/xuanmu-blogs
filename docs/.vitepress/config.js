@@ -73,19 +73,19 @@ module.exports = {
             nav: [
                
                 {
-                    text: '笔记',
+                    text: '📒笔记',
                     link: '/blogs/'
                 },
                 {
-                    text: '知识库',
+                    text: '📖知识库',
                     link: '/knowledge/'
                 },
                 {
-                    text: '想法',
+                    text: '💡想法',
                     link: '/idea/'
                 },
                 {
-                    text: '简历',
+                    text: '📄简历',
                     link: '/Introduction'
                 },
                 // {

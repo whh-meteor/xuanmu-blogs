@@ -210,6 +210,22 @@ https://blog.csdn.net/qq_43561314/article/details/126211227
 
 
 
-## 5 迁移与部署
+
+## 5 内存处理
+- 构建
+`sudo docker build -t lcc_pca_kmeans:v6 .`
+- 执行
+ `docker run -itd -p 5006:5000 lcc_pca_kmeans:v6 `
+ - 监控状态
+`sudo docker stats a890458eaa9367b72c210aeae814e755077cea81f463966ac69c79f361213340`
+
+- 资源拉满导致任务终止
+  ![](img/PCA+Kmeans/img-2023-03-10-16-23-11.png)
+
+- 限制内存到14并监控状态
+  `docker run -itd -p 5006:5000 -m 14g lcc_pca_kmeans:v6 `
+
+
+##   迁移与部署
 
   待更新
