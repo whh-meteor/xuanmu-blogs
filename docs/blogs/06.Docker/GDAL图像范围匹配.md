@@ -4,8 +4,10 @@
 `pull andrejreznik/python-gdal`
 
 
-## 编写dockerfile
-```dockerfile
+## 编写Dockerfile文件
+
+
+```
 # 配置环境
 FROM andrejreznik/python-gdal
 # 工作目录
@@ -18,9 +20,10 @@ RUN pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 ENTRYPOINT gunicorn run_predict:app -c gunicorn.conf.py 
 
 ```
+
 ## 算法
 
-```
+```py
 #https://appliedmachinelearning.wordpress.com/2017/11/25/unsupervised-changed-detection-in-multi-temporal-satellite-images-using-pca-k-means-python-code/
 from cgitb import reset
 # from crypt import methods
