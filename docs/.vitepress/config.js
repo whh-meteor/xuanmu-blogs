@@ -80,10 +80,10 @@ module.exports = {
                     text: '📖知识库',
                     link: '/knowledge/'
                 },
-                {
-                    text: '💡想法',
-                    link: '/idea/'
-                },
+                // {
+                //     text: '💡想法',
+                //     link: '/idea/'
+                // },
                 {
                     text: '📄简历',
                     link: '/Introduction'

@@ -29,7 +29,7 @@ features:
 - icon: 🚀
   title: 一些想法
   details: 我思故我在
-  link: /idea/index
+  # link: /idea/index
   
 ---
 <TheProject />

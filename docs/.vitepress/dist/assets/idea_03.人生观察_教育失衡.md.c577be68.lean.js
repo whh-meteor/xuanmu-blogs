@@ -1,0 +1,1 @@
+import{_ as p,o as e,c as t,d as a}from"./app.653cf9de.js";const m=JSON.parse('{"title":"教育失衡","description":"","frontmatter":{},"headers":[],"relativePath":"idea/03.人生观察/教育失衡.md"}'),_={name:"idea/03.人生观察/教育失衡.md"},i=a("",24),o=[i];function l(r,s,c,n,d,h){return e(),t("div",null,o)}const u=p(_,[["render",l]]);export{m as __pageData,u as default};
