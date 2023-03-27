@@ -29,11 +29,13 @@ module.exports = {
         },
         // 展示搜索框
         algolia: {
-            appKey: '',
-            indexName: '',
-            searchParameters: {
-                faeFilters: ['tags:guide,api']
-            }},
+            appKey: '8728aaa6a57e6cf716f75267a86da368',
+            indexName: 'xuanmu-blog',
+            appId: 'Z57D5U0Y2O',
+            // searchParameters: {
+            //     faeFilters: ['tags:guide,api']
+            // }
+        },
             // 网站 logo
             logo: '木马1.png',
             // 网站标题
