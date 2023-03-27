@@ -1,0 +1,1 @@
+import{_ as i,o as l,c as e,d as t}from"./app.22998deb.js";const m=JSON.parse('{"title":"走马","description":"","frontmatter":{},"headers":[],"relativePath":"idea/02.随笔/走马.md"}'),a={name:"idea/02.随笔/走马.md"},_=t("",3),r=[_];function o(s,c,n,d,p,h){return l(),e("div",null,r)}const u=i(a,[["render",o]]);export{m as __pageData,u as default};
