@@ -1,5 +1,11 @@
 # algolia 搜索
+https://www.algolia.com/apps/Z57D5U0Y2O/dashboard
 
+
+## 申请
+![](img/algolia搜索功能/img-2023-03-27-21-01-28.png)
+![](img/algolia搜索功能/img-2023-03-27-21-01-45.png)
+![](img/algolia搜索功能/img-2023-03-27-21-04-22.png)
 ## 账号与创建应用
 
 登录之后会进入控制台页面，点击右上角头像，会有一个设置选项，之后来到 Applications 这里，去创建一个应用
