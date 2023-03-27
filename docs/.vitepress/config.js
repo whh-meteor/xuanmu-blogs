@@ -32,7 +32,7 @@ module.exports = {
             appKey: '1b625a1f44dc3c18af763b13052954c0',
             indexName: 'xuanmu',
             appId: 'D9DN7DGGH0',
-            // searchParameters: {
+            // searchParameters: { 
             //     faeFilters: ['tags:guide,api']
             // }
         },
