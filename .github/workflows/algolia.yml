@@ -16,8 +16,8 @@ jobs:
 
       - name: Run algolia/docsearch-scraper image
         env:
-          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
-          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+          ALGOLIA_APP_ID: ${{ secrets.APPLICATION_ID }}
+          ALGOLIA_API_KEY: ${{ secrets.API_KEY }}
           CONFIG: ${{ steps.algolia_config.outputs.config }}
         run: |
           docker run \
