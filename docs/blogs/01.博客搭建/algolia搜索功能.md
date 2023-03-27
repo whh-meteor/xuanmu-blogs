@@ -71,7 +71,4 @@ jobs:
 解释一下：这里 yml 就是使用 Github Actions 在 Docker 中执行的 AlgoliaDocSearch scraper action，当我们推送到 main 分支时就会立即执行这个任务，当然如果你是 master 分支只需要修改 branches 那里的值即可。
 
 ## 在项目中接入
-123
-
-
-2
+测试密钥 修改github密钥
