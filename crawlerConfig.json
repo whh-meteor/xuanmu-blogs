@@ -1,6 +1,6 @@
 
 {
-    "index_name": "xuanmu-blogs", 
+    "index_name": "xuanmu", 
     "start_urls": ["https://whh-meteor.github.io/xuanmu-blogs/"],  
     "rateLimit": 8,
     "maxDepth": 10,
