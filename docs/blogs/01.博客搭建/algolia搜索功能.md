@@ -7,7 +7,9 @@ https://www.algolia.com/apps/Z57D5U0Y2O/dashboard
 ![](img/algolia搜索功能/img-2023-03-27-21-01-45.png)
 ![](img/algolia搜索功能/img-2023-03-27-21-04-22.png)
 ## 账号与创建应用
+### 1. 申请通过后接受自动创建
 
+### 2.手动创建
 登录之后会进入控制台页面，点击右上角头像，会有一个设置选项，之后来到 Applications 这里，去创建一个应用
 
 
@@ -73,3 +75,12 @@ jobs:
 ## 在项目中接入
 测试密钥 修改github密钥
 1
+
+
+
+
+
+
+
+## 本地Docker爬取
+
