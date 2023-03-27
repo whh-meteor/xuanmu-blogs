@@ -29,7 +29,7 @@ module.exports = {
         },
         // 展示搜索框
         algolia: {
-            appKey: '60dae65fea976e2c3be77fba9dd092db',
+            appKey: '3a7ab926b22694f5bc861bd7df6b2c86',
             indexName: 'xuanmu-blogs',
             appId: 'Z57D5U0Y2O',
             // searchParameters: { 
