@@ -76,11 +76,18 @@ jobs:
 测试密钥 修改github密钥
 1
 
-
-
+报错 Crawling issue: nbHits 0 for xuanmu
+暂时不知道为什么 尝试一下本地Docker爬去
 
 
 
 
 ## 本地Docker爬取
 
+安装jq
+`brew install jq`
+
+
+`docker run -it --env-file=.env -e "CONFIG=$(cat crawlerConfig.json | jq -r tostring)" algolia/docsearch-scraper`
+
+报错algoliasearch.exceptions.AlgoliaUnreachableHostException: Unreachable hosts
