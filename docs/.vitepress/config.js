@@ -33,7 +33,7 @@ module.exports = {
             indexName: 'xuanmu',
             appId: 'D9DN7DGGH0',
             // searchParameters: { 
-            //     faeFilters: ['tags:guide,api']
+            //       faeFilters: ['tags:guide,api']
             // }
         },
             // 网站 logo
