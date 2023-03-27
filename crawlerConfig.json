@@ -1,7 +1,7 @@
 
 
   {
-    "index_name": "xuanmu", 
+    "index_name": "xuanmu-blogs", 
     "start_urls": ["https://whh-meteor.github.io/xuanmu-blogs/"],  
     "sitemap_urls": [
       "https://whh-meteor.github.io/sitemap.xml"
