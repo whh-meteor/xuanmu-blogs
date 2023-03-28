@@ -29,9 +29,9 @@ module.exports = {
         },
         // 展示搜索框
         algolia: {
-            appKey: '3a7ab926b22694f5bc861bd7df6b2c86',
-            indexName: 'xuanmu-blogs',
-            appId: 'Z57D5U0Y2O',
+            appKey: '1b625a1f44dc3c18af763b13052954c0',
+            indexName: 'xuanmu',
+            appId: 'D9DN7DGGH0',
             // searchParameters: { 
             //       faeFilters: ['tags:guide,api']
             // }
