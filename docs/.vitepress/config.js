@@ -29,7 +29,7 @@ module.exports = {
         },
         // 展示搜索框
         algolia: {
-            appKey: '1b625a1f44dc3c18af763b13052954c0',
+            appKey: '510ae7521430f7a695ad718e981c41b2',
             indexName: 'xuanmu',
             appId: 'D9DN7DGGH0',
             // searchParameters: { 
