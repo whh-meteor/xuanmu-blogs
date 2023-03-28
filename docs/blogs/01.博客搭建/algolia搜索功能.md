@@ -111,3 +111,17 @@ https://chodocs.cn/program/vitepress-local-search/
 ### 不使用域名处理
 
   https://www.bilibili.com/video/BV1yT411X7AY/
+
+
+
+
+
+  ## 自己更改vue组件
+
+  onMounted(async () => {
+  const data = await import("virtual:search-data");
+  INDEX_DATA.value = data.default.INDEX_DATA;
+  PREVIEW_LOOKUP.value = data.default.PREVIEW_LOOKUP;
+  Options.value = data.default.Options;
+  // origin.value = window.location.origin + withBase(locale.value === 'root' ? '/' : locale.value);
+  origin.value = window.location.origin + withBase("/");
