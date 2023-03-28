@@ -1,36 +1,27 @@
 {
-  "hash": "47be0130",
-  "browserHash": "8c93651c",
+  "hash": "d8f80905",
+  "browserHash": "24dafcf7",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "b30e9ec3",
+      "fileHash": "9518f669",
       "needsInterop": false
     },
     "jquery": {
       "src": "../../../../node_modules/jquery/dist/jquery.js",
       "file": "jquery.js",
-      "fileHash": "9dd09f40",
+      "fileHash": "d86f173b",
       "needsInterop": true
     },
     "lottie-web": {
       "src": "../../../../node_modules/lottie-web/build/player/lottie.js",
       "file": "lottie-web.js",
-      "fileHash": "8ae9f25a",
+      "fileHash": "269fa42d",
       "needsInterop": true
-    },
-    "vuex": {
-      "src": "../../../../node_modules/vuex/dist/vuex.esm-bundler.js",
-      "file": "vuex.js",
-      "fileHash": "748c2903",
-      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-3T6VSYDD": {
-      "file": "chunk-3T6VSYDD.js"
-    },
     "chunk-RSJERJUL": {
       "file": "chunk-RSJERJUL.js"
     }

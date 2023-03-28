@@ -8,10 +8,13 @@
   "license": "ISC",
   "devDependencies": {
     "fast-glob": "^3.2.12",
+    "flexsearch": "^0.7.31",
+    "markdown-it": "^13.0.1",
     "sass": "^1.57.1",
     "vite-plugin-svg-icons": "^2.0.1",
     "vitepress": "^1.0.0-alpha.32",
     "vitepress-plugin-autobar": "^1.0.8",
+    "vitepress-plugin-search": "^1.0.4-alpha.19",
     "vue-particles": "^1.0.9"
   },
   "scripts": {
