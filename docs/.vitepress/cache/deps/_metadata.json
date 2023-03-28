@@ -1,23 +1,23 @@
 {
-  "hash": "144b48a3",
-  "browserHash": "8f931f92",
+  "hash": "1ae2ee92",
+  "browserHash": "1c4a3178",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "be2af419",
+      "fileHash": "f8f4e5ea",
       "needsInterop": false
     },
     "jquery": {
       "src": "../../../../node_modules/jquery/dist/jquery.js",
       "file": "jquery.js",
-      "fileHash": "255c616f",
+      "fileHash": "e2b4dd92",
       "needsInterop": true
     },
     "lottie-web": {
       "src": "../../../../node_modules/lottie-web/build/player/lottie.js",
       "file": "lottie-web.js",
-      "fileHash": "9abd0877",
+      "fileHash": "c5f82bbc",
       "needsInterop": true
     }
   },
