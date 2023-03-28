@@ -91,3 +91,19 @@ jobs:
 `docker run -it --env-file=.env -e "CONFIG=$(cat crawlerConfig.json | jq -r tostring)" algolia/docsearch-scraper`
 
 报错algoliasearch.exceptions.AlgoliaUnreachableHostException: Unreachable hosts
+
+失败
+
+
+## 使用fleaxsearch离线搜索
+- 参考:
+
+https://github.com/emersonbottero/vitepress-plugin-search
+https://chodocs.cn/program/vitepress-local-search/
+
+
+- 小坑：
+    索引地址在包含二级/xuanmu-blogs，在config.js中修改base为“/”后可以正常使用，但这样在github中部署就会出现问题，
+    绑定域名 将“https：//whh-metor.github.io/xuanmu-blogs/”绑定到“www.re-0.com”不包含二级目录后可以正常使用
+
+    ![](img/algolia搜索功能/img-2023-03-28-10-36-02.png)

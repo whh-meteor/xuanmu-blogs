@@ -20,7 +20,7 @@ module.exports = {
     ignoreDeadLinks: true,//忽略dead link
     // github pages 配置
     // base: '/xuanmu-blogs/',
-    base: '/',
+    base: '/',//使用根目录的话就需要在github上绑定域名 网站指向www.re-0.com/ 不包含子目录，搜索功能才能使用
     head: [
         // 添加图标
         ['link', { rel: 'icon', href: '/木马1.png' }]
