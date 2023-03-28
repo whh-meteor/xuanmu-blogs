@@ -107,3 +107,7 @@ https://chodocs.cn/program/vitepress-local-search/
     绑定域名 将“https：//whh-metor.github.io/xuanmu-blogs/”绑定到“www.re-0.com”不包含二级目录后可以正常使用
 
     ![](img/algolia搜索功能/img-2023-03-28-10-36-02.png)
+
+### 不使用域名处理
+
+  https://www.bilibili.com/video/BV1yT411X7AY/

@@ -1,17 +1,7 @@
 import { getSideBar } from 'vitepress-plugin-autobar'
 import {createSvgIconsPlugin} from 'vite-plugin-svg-icons';
 import path from 'path';
-//vite.config.ts
-import { SearchPlugin } from "vitepress-plugin-search";
-import { defineConfig } from "vite";
-import flexSearchIndexOptions from "flexsearch";
-//default options
-var options = {
-  ...flexSearchIndexOptions,
-  previewLength: 100, //搜索结果预览长度
-  buttonLabel: "搜索",
-  placeholder: "情输入关键词",
-};
+
 module.exports = {
   
     title: '旋木博客',
@@ -19,13 +9,13 @@ module.exports = {
     lang: 'zh-CN',
     ignoreDeadLinks: true,//忽略dead link
     // github pages 配置
-    // base: '/xuanmu-blogs/',
-    base: '/',//使用根目录的话就需要在github上绑定域名 网站指向www.re-0.com/ 不包含子目录，搜索功能才能使用
+    base: '/xuanmu-blogs/',
+   // base: '/',//使用根目录的话就需要在github上绑定域名 网站指向www.re-0.com/ 不包含子目录，搜索功能才能使用
     head: [
         // 添加图标
         ['link', { rel: 'icon', href: '/木马1.png' }]
     ],
-    plugins: ['autobar', SearchPlugin(options)
+    plugins: ['autobar',
    
     ],
     themeConfig: {
