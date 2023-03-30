@@ -1,6 +1,11 @@
 # AI 与写作工具
 
+## ChatPaper
+论文进行总结，帮助科研人员进行论文初筛；预审稿；论文初稿进行润色、翻译等；审稿人的提问进行回复
 
+
+
+https://github.com/kaixindelele/ChatPaper
 ## ChatGPT
 https://openai.com/blog/chatgpt/
 
