@@ -11,7 +11,7 @@ var options = {
   encode: false,
 
   tokenize: 'full',//中文支持
-  ignore:['/idea/']
+ 
 };
 
 export default defineConfig({

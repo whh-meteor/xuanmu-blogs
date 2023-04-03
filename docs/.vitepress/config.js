@@ -15,7 +15,11 @@ module.exports = {
         // 添加图标
         ['link', { rel: 'icon', href: '/木马1.png' }]
     ],
-    plugins: ['autobar',
+    plugins: ['autobar',   'vitepress-search-plugin',
+    {
+      // 其他选项
+      exclude: ['/exclude-page/']
+    }
    
     ],
     themeConfig: {
