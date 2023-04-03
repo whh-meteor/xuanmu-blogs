@@ -1,1 +1,0 @@
-import{_ as l,o as e,c as i,d as t}from"./app.4dc98d08.js";const g=JSON.parse('{"title":"青花瓷","description":"","frontmatter":{},"headers":[],"relativePath":"idea/02.随笔/天青色等烟雨.md"}'),r={name:"idea/02.随笔/天青色等烟雨.md"},o=t("",23),s=[o];function n(p,_,a,m,u,c){return e(),i("div",null,s)}const h=l(r,[["render",n]]);export{g as __pageData,h as default};
