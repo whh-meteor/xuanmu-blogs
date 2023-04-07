@@ -3,7 +3,7 @@ layout: home
 hero:
   name: 旋木 
   text: Hi, I'm Xuan Mu 👋
-  tagline: 双二流名校在读非cs冷门的专业研究生
+  tagline: 天青色等烟雨
   image:
     src: 木马1.png
     alt: image
@@ -32,12 +32,20 @@ features:
   # link: /idea/index
   
 ---
+
+<!-- 项目分享部分 -->
 <TheProject />
  
 <script setup >
 import TheProject from './components/Project.vue'
 </script>
  
+
+
+
+
+
+
 <!-- <div style="color: red; font-size: 24px;">这是个有style的随便写点</div> -->
 <!-- <div><img src="/wave.svg" style="border: 0px solid steelblue;margin-top:0" /></div> -->
 
