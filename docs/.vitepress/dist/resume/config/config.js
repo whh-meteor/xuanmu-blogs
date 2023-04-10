@@ -97,7 +97,7 @@ var config = {
         // ["————————", "", "<p>暂无工作经历，期待您的联系。</p>"]
 
         ["2021/9/1 — 2024/6/20", "<br>山东建筑大学",
-            "<p><strong>地理信息科学｜硕士</strong></p>" +
+            "<p><strong>资源与环境(测绘遥感GIS方向)｜硕士</strong></p>" +
             "<p>主修课程：研究方向：地理信息服务</p>" +
             "<p>学习成绩：智育成绩第三名。综合测评成绩第三名。山东建筑大学一等奖学金。山东建筑大学优秀研究生团队。</p>"
         ],
@@ -122,7 +122,7 @@ var config = {
         ["2022-9", "第六期百度飞浆论文复现挑战赛UNETR： Transformers for 3D Medical Image  第一名","研一"],
         ["2022-9", "第六期百度飞浆论文复现挑战赛STANet for remote sensing image change detection 第一名","研一"],
         ["2022-6", "软著：地表覆盖 Web 服务计算平台V1.0","研一下学期（山东建筑大学、邢华桥、王海航）"],
-        ["2022-3", "专利：结合后验概率和空间邻域信息的遥感影像变化检测方法","研一，团队成果（邢华桥；朱林烨；王海航：项俊武：孙兩生；于明洋：仇培元：孟飞），https://kns-cnki-net-443.webvpn.sdjzu.edu.cn/kcms2/article/abstract?v=kxaUMs6x7-4I2jr5WTdXti3zQ9F92xu04RhPoVQd9-31yZc_wClc_9Xs9L1ucjY1vvrdhdAKsCqqRFZgAHni2eO4zl3izxe-&uniplatform=NZKPT"],
+        ["2022-3", "专利：结合后验概率和空间邻域信息的遥感影像变化检测方法","研一，团队成果（邢华桥；朱林烨；王海航：项俊武：孙兩生；于明洋：仇培元：孟飞）"],
         ["2019-11", "第八届全国大学生GIS技能大赛", "大三上学期，安徽芜湖"],
         ["2019-9", "17届SuperMap杯全国GIS技能大赛三等奖（开发组）", "大三上学期，北京超图"]
     ],
@@ -137,11 +137,11 @@ var config = {
      * 建议您放置数量 <= 5
      */
     icon: [
-        ["./svg/LeetCode.svg", "https://leetcode-cn.com/u/happysnaker/", "我的力扣主页"],
-        ["./svg/github.svg", "https://github.com/happysnaker", "我的GitHub主页"],
-        ["./svg/博客.svg", "http://1.15.234.109:8000", "我的个人博客"],
-        ["./svg/掘金.svg", "https://juejin.cn/user/3853167638625000", "我的掘金主页"],
-        ["./svg/知乎.svg", "https://www.zhihu.com/people/tian-xia-you-dao-81", "我的知乎主页"]
+        ["./svg/LeetCode.svg", "https://leetcode-cn.com/", "我的力扣主页"],
+        ["./svg/github.svg", "https://github.com/whh-meteor", "我的GitHub主页"],
+        ["./svg/博客.svg", "https://whh-meteor.github.io/xuanmu-blogs/", "我的个人博客"],
+        ["./svg/掘金.svg", "https://juejin.cn/", "我的掘金主页"],
+        ["./svg/知乎.svg", "https://www.zhihu.com/", "我的知乎主页"]
     ],
 
 
