@@ -86,6 +86,14 @@ module.exports = {
                     text: '📖知识库',
                     link: '/knowledge/'
                 },
+                {
+                    text: "🔖Tags",
+                    link: "/tags",
+                  },
+                  {
+                    text: "📃Archives",
+                    link: "/archives",
+                  },
                 // {
                 //     text: '💡想法',
                 //     link: '/idea/'

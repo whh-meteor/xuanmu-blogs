@@ -3,7 +3,7 @@
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Comment from './Comment.vue';
- 
+import Title from "./Title.vue";
 const { frontmatter } = useData()
 const { page } = useData()
 const { Layout } = DefaultTheme
@@ -13,6 +13,12 @@ const { Layout } = DefaultTheme
  
  
  <Layout>  
+
+  <template #doc-before>
+      <Title :key="page.relativePath"/>
+ 
+    </template>
+
    <!-- this is where markdown content will be rendered -->
   <template #doc-footer-before>
     <Comment  :key="page.relativePath"></Comment>

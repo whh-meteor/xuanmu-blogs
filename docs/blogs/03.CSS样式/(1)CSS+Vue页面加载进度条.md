@@ -1,3 +1,10 @@
+---
+title: CSS+Vue实现页面加载进度条
+description: CSS
+date: 2022-12-26
+tags:
+  - CSS
+---
 # CSS+Vue实现页面加载进度条
 ## 一、动画样式
 

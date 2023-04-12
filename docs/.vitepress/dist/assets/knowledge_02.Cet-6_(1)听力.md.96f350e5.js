@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.a15774cd.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/02.Cet-6/(1)听力.md"}'),o={name:"knowledge/02.Cet-6/(1)听力.md"};function r(n,s,c,_,d,p){return t(),a("div")}const m=e(o,[["render",r]]);export{l as __pageData,m as default};

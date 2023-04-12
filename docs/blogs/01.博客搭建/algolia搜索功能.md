@@ -1,3 +1,10 @@
+---
+title: flexsearch离线搜索
+description: Blog
+date: 2023-03-27
+tags:
+  - Blog
+---
 # algolia 在线搜索 & flexsearch离线搜索
 https://www.algolia.com/apps/Z57D5U0Y2O/dashboard
 
