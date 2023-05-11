@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.4abab88e.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/02.Cet-6/(1)六级听力.md"}'),o={name:"knowledge/02.Cet-6/(1)六级听力.md"};function r(n,_,s,c,d,p){return t(),a("div")}const m=e(o,[["render",r]]);export{l as __pageData,m as default};
