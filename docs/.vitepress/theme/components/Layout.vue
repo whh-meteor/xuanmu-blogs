@@ -4,14 +4,16 @@ import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Comment from './Comment.vue';
 import Title from "./Title.vue";
+import Music from './Music.vue'
 const { frontmatter } = useData()
 const { page } = useData()
 const { Layout } = DefaultTheme
+
 </script>
 
 <template>
  
- 
+ <Music />
  <Layout>  
 
   <template #doc-before>
