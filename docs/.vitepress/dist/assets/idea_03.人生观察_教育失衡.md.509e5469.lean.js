@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:docs/.vitepress/dist/assets/idea_03.人生观察_教育失衡.md.e18177a7.lean.js
-import{_ as p,o as e,c as t,d as a}from"./app.5b7b104f.js";const m=JSON.parse('{"title":"教育失衡","description":"人生观察","frontmatter":{"title":"教育失衡","description":"人生观察","date":"2023-02-20T00:00:00.000Z","tags":["人生观察"]},"headers":[],"relativePath":"idea/03.人生观察/教育失衡.md"}'),i={name:"idea/03.人生观察/教育失衡.md"},_=a("",24),o=[_];function l(r,s,c,d,n,h){return e(),t("div",null,o)}const T=p(i,[["render",l]]);export{m as __pageData,T as default};
-========
-import{_ as p,o as e,c as t,d as a}from"./app.026cbf45.js";const m=JSON.parse('{"title":"教育失衡","description":"人生观察","frontmatter":{"title":"教育失衡","description":"人生观察","date":"2023-02-20T00:00:00.000Z","tags":["人生观察"]},"headers":[],"relativePath":"idea/03.人生观察/教育失衡.md"}'),i={name:"idea/03.人生观察/教育失衡.md"},_=a("",24),o=[_];function l(r,s,c,d,n,h){return e(),t("div",null,o)}const T=p(i,[["render",l]]);export{m as __pageData,T as default};
->>>>>>>> 471e078b780e330095d5d9cddcfd59265fea8eac:docs/.vitepress/dist/assets/idea_03.人生观察_教育失衡.md.509e5469.lean.js

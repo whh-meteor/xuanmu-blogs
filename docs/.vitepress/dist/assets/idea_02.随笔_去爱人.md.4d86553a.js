@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:docs/.vitepress/dist/assets/idea_02.随笔_去爱人.md.1f757086.js
-import{_ as e,o as t,c as a}from"./app.5b7b104f.js";const m=JSON.parse('{"title":"有一套房子之后，才能去爱别人吗？","description":"随笔","frontmatter":{"title":"有一套房子之后，才能去爱别人吗？","description":"随笔","date":"2023-02-14T00:00:00.000Z","tags":["随笔"]},"headers":[],"relativePath":"idea/02.随笔/去爱人.md"}'),r={name:"idea/02.随笔/去爱人.md"};function o(s,c,n,i,_,d){return t(),a("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
-========
-import{_ as e,o as t,c as a}from"./app.026cbf45.js";const m=JSON.parse('{"title":"有一套房子之后，才能去爱别人吗？","description":"随笔","frontmatter":{"title":"有一套房子之后，才能去爱别人吗？","description":"随笔","date":"2023-02-14T00:00:00.000Z","tags":["随笔"]},"headers":[],"relativePath":"idea/02.随笔/去爱人.md"}'),r={name:"idea/02.随笔/去爱人.md"};function o(s,c,n,i,_,d){return t(),a("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
->>>>>>>> 471e078b780e330095d5d9cddcfd59265fea8eac:docs/.vitepress/dist/assets/idea_02.随笔_去爱人.md.4d86553a.js
