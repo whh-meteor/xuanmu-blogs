@@ -1,41 +1,41 @@
 {
-  "hash": "7c048fa0",
-  "browserHash": "05671e47",
+  "hash": "4b8704fc",
+  "browserHash": "c7da1ac5",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "e6a17d7e",
+      "fileHash": "67bb3e0a",
       "needsInterop": false
     },
     "jquery": {
       "src": "../../../../node_modules/jquery/dist/jquery.js",
       "file": "jquery.js",
-      "fileHash": "1a4c715b",
+      "fileHash": "49f19976",
       "needsInterop": true
     },
     "lottie-web": {
       "src": "../../../../node_modules/lottie-web/build/player/lottie.js",
       "file": "lottie-web.js",
-      "fileHash": "2ee1d500",
+      "fileHash": "ca01a19d",
       "needsInterop": true
     },
     "dayjs": {
       "src": "../../../../node_modules/dayjs/dayjs.min.js",
       "file": "dayjs.js",
-      "fileHash": "9980e9e0",
+      "fileHash": "d46389ca",
       "needsInterop": true
     },
     "dayjs/plugin/relativeTime": {
       "src": "../../../../node_modules/dayjs/plugin/relativeTime.js",
       "file": "dayjs_plugin_relativeTime.js",
-      "fileHash": "bb77c379",
+      "fileHash": "d3424ecb",
       "needsInterop": true
     },
     "vuex": {
       "src": "../../../../node_modules/vuex/dist/vuex.esm-bundler.js",
       "file": "vuex.js",
-      "fileHash": "7af07750",
+      "fileHash": "d1927f4c",
       "needsInterop": false
     }
   },

@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:docs/.vitepress/dist/assets/blogs_08.图像处理_(3)Python遍历计算波段.md.26fb00a4.js
 import{_ as s,o as n,c as a,d as l}from"./app.5b7b104f.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/08.图像处理/(3)Python遍历计算波段.md"}'),p={name:"blogs/08.图像处理/(3)Python遍历计算波段.md"},o=l(`<div class="language-python"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki"><code><span class="line"><span style="color:#89DDFF;">&quot;&quot;&quot;</span></span>
+========
+import{_ as s,o as n,c as a,d as l}from"./app.026cbf45.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/08.图像处理/(3)Python遍历计算波段.md"}'),p={name:"blogs/08.图像处理/(3)Python遍历计算波段.md"},o=l(`<div class="language-python"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki"><code><span class="line"><span style="color:#89DDFF;">&quot;&quot;&quot;</span></span>
+>>>>>>>> 471e078b780e330095d5d9cddcfd59265fea8eac:docs/.vitepress/dist/assets/blogs_08.图像处理_(3)Python遍历计算波段.md.b41f409c.js
 <span class="line"><span style="color:#676E95;">@author:Nan J</span></span>
 <span class="line"><span style="color:#676E95;">@date  :2022/12/8:10:11</span></span>
 <span class="line"><span style="color:#676E95;">@IDE   :Spyder</span></span>

@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:docs/.vitepress/dist/assets/blogs_06.Docker_自动部署脚本.md.2b8c7d49.js
 import{_ as s,o as n,c as a,d as l}from"./app.5b7b104f.js";const F=JSON.parse('{"title":"Docker 自动部署脚本","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/06.Docker/自动部署脚本.md"}'),p={name:"blogs/06.Docker/自动部署脚本.md"},o=l(`<h1 id="docker-自动部署脚本" tabindex="-1">Docker 自动部署脚本 <a class="header-anchor" href="#docker-自动部署脚本" aria-hidden="true">#</a></h1><pre><code>Ps:需要将上述的脚本、Dockerfile文件和jar包放在同一路径下，然后执行自动脚本即可自动部署项目，如果项目有更新删除jar包重新上传再执行自动话脚本即可。
+========
+import{_ as s,o as n,c as a,d as l}from"./app.026cbf45.js";const F=JSON.parse('{"title":"Docker 自动部署脚本","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/06.Docker/自动部署脚本.md"}'),p={name:"blogs/06.Docker/自动部署脚本.md"},o=l(`<h1 id="docker-自动部署脚本" tabindex="-1">Docker 自动部署脚本 <a class="header-anchor" href="#docker-自动部署脚本" aria-hidden="true">#</a></h1><pre><code>Ps:需要将上述的脚本、Dockerfile文件和jar包放在同一路径下，然后执行自动脚本即可自动部署项目，如果项目有更新删除jar包重新上传再执行自动话脚本即可。
+>>>>>>>> 471e078b780e330095d5d9cddcfd59265fea8eac:docs/.vitepress/dist/assets/blogs_06.Docker_自动部署脚本.md.f1a843ec.js
 </code></pre><div class="language-shell"><button title="Copy Code" class="copy"></button><span class="lang">shell</span><pre class="shiki"><code><span class="line"><span style="color:#676E95;">#源算法路径 (此处指定到要部署的算法包所在文件夹即可)</span></span>
 <span class="line"><span style="color:#A6ACCD;">SOURCE_PATH=/usr/lv/algorithm/demo</span></span>
 <span class="line"><span style="color:#676E95;">#docker 镜像/容器名字或者jar名字 这里都命名为这个</span></span>
