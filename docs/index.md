@@ -36,15 +36,18 @@ features:
 <!-- 项目分享部分 -->
 <TheProject />
  
-<script setup >
-import TheProject from './components/Project.vue'
-</script>
+
+ 
+<!-- 音乐 -->
+
+<Music />
+ 
  
 
-
-
-
-
+<script setup >
+import TheProject from './components/Project.vue'
+import Music from './components/Music.vue'
+</script>
 
 <!-- <div style="color: red; font-size: 24px;">这是个有style的随便写点</div> -->
 <!-- <div><img src="/wave.svg" style="border: 0px solid steelblue;margin-top:0" /></div> -->
