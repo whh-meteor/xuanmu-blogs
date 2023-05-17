@@ -1,86 +1,91 @@
 <template>
-  <div id="music">
-      <!--@ended事件，当媒体播放完成 会自动调用该方法，执行该脚本，自动播放下一首-->
-      <audio
-ref="audio"
-src="我的名字.mp3">
-</audio>
-      <!-- <audio id="audio" :src="musicData[currentIndex].songSrc"></audio> -->
-      <!-- <audio id="audio" :src="musicData[currentIndex].songSrc" controls autoplay @ended = 'nextHanlder'></audio> -->
-      <ul>
-          <!-- 循环歌名，展示 -->
-          <!-- <li @click = 'songHandler(index)' v-for = '(item,index) in musicData' :key="item.id" :class = '{active:index===currentIndex}'>
-          {{item.id}}.{{ item.author }}-{{ item.name }}
-     </li> -->
-      </ul>
-  </div>
-</template>
-<script>
-
-var musicData = [{
-  id: 1,
-  name: '我的名字',
-  author: '焦迈奇',
-  songSrc: '我的名字.mp3'
-}, {
-  id: 2,
-  name: '我的名字',
-  author: '焦迈奇',
-  songSrc: '我的名字.mp3'
-}
-  ,
-{
-  id: 3,
-  name: '我的名字',
-  author: '焦迈奇',
-  songSrc: '我的名字.mp3'
-}];
-export default {
-  name: 'Music',
-  props: {
-
-  },
-  data() {
-      return {
-          musicData: [],
-          currentIndex: 1
-      }
-
-  },
-  methods: {
-      // //点击那首歌播放哪一首
-      // songHandler(i) {
-      //     this.currentIndex = i;
-      // },             //播放下一首
-      // nextHanlder() {
-      //     this.currentIndex++;
-      // },
-      // audioAutoPlay() {
-      //     let audio = document.getElementById("audio");
-      //     audio.play();
-      //     document.removeEventListener("touchstart", this.audioAutoPlay);
-      // }
-
-  },
-
-
-  created() {
-      //赋值变量
-      // this.musicData = musicData
-      // this.$refs.audio.play()
-  },
-
-  mounted() {
-      // // 播放音乐
-      // let oAudio = document.querySelector("#audio");
-      // oAudio.onended = function () {
-      //     //播放完毕，重新循环播放
-      //     oAudio.load();
-      //     oAudio.play();
-      // };
-      // this.audioAutoPlay()
-      this.$refs.audio.play()
-  }
-}
-
-</script>
+    <div class="page-promotion flex-col">
+      <div class="con-play flex" @click="audioPlayOrPause()">
+        <img v-show="playFlag" class="audio-on" src="../../dist/resume/svg/暂停.svg" alt="">
+        <img v-show="!playFlag" class="audio-off" src="../../dist/resume/svg/music.svg" alt="">
+      </div>
+      
+      <audio ref="audio" src="我的名字.mp3" autoplay loop preload="auto" crossOrigin="anonymous"> </audio>
+    </div>
+  </template>
+  
+  <script>
+    export default {
+      name: 'Promotion',
+      data () {
+        return {
+          playFlag: true,
+          clickMusicBtn: false,
+        }
+      },
+      
+      async mounted () {
+        this.audioAutoPlay()
+        document.addEventListener("visibilitychange", (e) => { // 兼容ios微信手Q
+          if (this.clickMusicBtn) { // 点击了关闭音乐按钮
+            if (this.playFlag) {
+              this.audioAutoPlay();
+              this.playFlag = true;
+            } else {
+              this.audioPause();
+              this.playFlag = false;
+            }
+        
+            text.innerHTML = e.hidden;
+            if (e.hidden) {  // 网页被挂起
+              this.audioAutoPlay();
+              this.playFlag = true;
+            } else { // 网页被呼起
+              this.audioPause();
+              this.playFlag = false;
+            }
+          } else { // 未点击关闭音乐按钮
+            if (this.playFlag) {
+              this.audioPause();
+              this.playFlag = false;
+            } else {
+              this.audioAutoPlay();
+              this.playFlag = true;
+            }
+        
+            text.innerHTML = e.hidden;
+            if (e.hidden) {  // 网页被挂起
+              this.audioPause();
+              this.playFlag = false;
+            } else { // 网页被呼起
+              this.audioAutoPlay();
+              this.playFlag = true;
+            }
+          }
+        });
+      },
+      
+      methods: {
+        audioPlayOrPause() {
+          this.clickMusicBtn = !this.clickMusicBtn;
+          if (this.playFlag) {
+            this.audioPause();
+            this.playFlag = false;
+          } else {
+            this.audioAutoPlay();
+            this.playFlag = true;
+          }
+        },
+        audioPause() {
+          let audio = this.$refs.audio
+          audio.pause();
+          document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.pause();
+          }, false);
+        },
+        audioAutoPlay() {
+          let audio = this.$refs.audio
+          audio.play();
+          document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+          }, false);
+        },
+      },
+    }
+  </script>
+  
