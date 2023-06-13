@@ -1,3 +1,10 @@
+---
+title: vitepress 引入vue组件
+description: Blog
+date: 2023-02-26
+tags:
+  - Blog
+---
 # vitepress 引入vue组件
 
 ## 编写VUE组件

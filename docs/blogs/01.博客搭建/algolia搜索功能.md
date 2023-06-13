@@ -1,4 +1,11 @@
-# algolia 搜索
+---
+title: flexsearch离线搜索
+description: Blog
+date: 2023-03-27
+tags:
+  - Blog
+---
+# algolia 在线搜索 & flexsearch离线搜索
 https://www.algolia.com/apps/Z57D5U0Y2O/dashboard
 
 
@@ -7,7 +14,9 @@ https://www.algolia.com/apps/Z57D5U0Y2O/dashboard
 ![](img/algolia搜索功能/img-2023-03-27-21-01-45.png)
 ![](img/algolia搜索功能/img-2023-03-27-21-04-22.png)
 ## 账号与创建应用
+### 1. 申请通过后接受自动创建
 
+### 2.手动创建
 登录之后会进入控制台页面，点击右上角头像，会有一个设置选项，之后来到 Applications 这里，去创建一个应用
 
 
@@ -71,3 +80,55 @@ jobs:
 解释一下：这里 yml 就是使用 Github Actions 在 Docker 中执行的 AlgoliaDocSearch scraper action，当我们推送到 main 分支时就会立即执行这个任务，当然如果你是 master 分支只需要修改 branches 那里的值即可。
 
 ## 在项目中接入
+测试密钥 修改github密钥
+1
+
+报错 Crawling issue: nbHits 0 for xuanmu
+暂时不知道为什么 尝试一下本地Docker爬去
+
+
+
+
+## 本地Docker爬取
+
+安装jq
+`brew install jq`
+
+
+`docker run -it --env-file=.env -e "CONFIG=$(cat crawlerConfig.json | jq -r tostring)" algolia/docsearch-scraper`
+
+报错algoliasearch.exceptions.AlgoliaUnreachableHostException: Unreachable hosts
+
+失败
+
+
+## 使用fleaxsearch离线搜索
+- 参考:
+
+https://github.com/emersonbottero/vitepress-plugin-search
+https://chodocs.cn/program/vitepress-local-search/
+
+
+- 小坑：
+    索引地址在包含二级/xuanmu-blogs，在config.js中修改base为“/”后可以正常使用，但这样在github中部署就会出现问题，
+    绑定域名 将“https：//whh-metor.github.io/xuanmu-blogs/”绑定到“www.re-0.com”不包含二级目录后可以正常使用
+
+    ![](img/algolia搜索功能/img-2023-03-28-10-36-02.png)
+
+### 不使用域名处理
+
+  https://www.bilibili.com/video/BV1yT411X7AY/
+
+
+
+
+
+  ## 自己更改vue组件
+
+  onMounted(async () => {
+  const data = await import("virtual:search-data");
+  INDEX_DATA.value = data.default.INDEX_DATA;
+  PREVIEW_LOOKUP.value = data.default.PREVIEW_LOOKUP;
+  Options.value = data.default.Options;
+  // origin.value = window.location.origin + withBase(locale.value === 'root' ? '/' : locale.value);
+  origin.value = window.location.origin + withBase("/");

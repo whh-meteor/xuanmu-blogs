@@ -1,14 +1,35 @@
 <script setup>
 const demo = [
+
   {
     name: "基于vitepress的博客搭建",
     description:
-      "使用vitepress基于vue3和vite搭建一个简单的个人博客页面并且同步到Git Pages",
+      "使用vitepress基于vue3和vite搭建一个简单的个人博客页面并且同步到GitHub Pages",
     tags: ["vue3", "vite", "vitepress", "博客"],
     link: "https://gitee.com/martleth/xuanmu-blogs",
     pre: "https://martleth.gitee.io/xuanmu-blogs/",
     href: "/blogs/04.Web基础/博客架构",
     img: "assets/snow.jpg",
+
+  } ,
+  {
+    name: "地表覆盖智能服务平台",
+    description:
+      "包含地图服务、处理服务，能够进行服务发布、服务管理、服务执行和组合。",
+    tags: ["Vue", "SpringBoot", "OGC WPS", "Geoserver", "Python", "GRASS", "AGS"],
+    pre: "",
+    link: "https://gitee.com/martleth/gscp_-vue",
+    href: "/blogs/05.ILCS系列/ILCS系统说明文档",
+    img: "assets/ilcs.png",
+  },{
+    name: "UNI-APP移动开发-山东水文",
+    description:
+      "使用uni-app框架开发山东水文监测app",
+    tags: ["UNI-APP", "Android", "potgreSQL", "vue"],
+    link: "https://gitee.com/martleth/SDSW-APP",
+    pre: "",
+    href: "",
+    img: "assets/uni.png",
 
   },
   {
@@ -25,12 +46,13 @@ const demo = [
     name: "R语言在线图像处理",
     description:
       "由R语言作为后台、Shiny作为UI、Docker作为容器的在线滤波和开闭运算",
-    tags: ["R", "Docker", "Shiny/Shiny-Server"],
+    tags: ["R", "Docker", "Shiny/Shiny-Server","EBImage"],
     pre: "http://172.31.41.123:3838/",
     link: "https://github.com/whh-meteor/R_shiny_docker",
     href: "/blogs/06.Docker/R语言图像处理",
     img: "assets/R-shiny.jpg",
   }
+ 
 //   {
 //     name: "用Electron实现简单md编辑器",
 //     description: "使用Electron和Vue3实现一个纯前端的markdown格式编辑器",

@@ -9,6 +9,9 @@
 
 <Parallax />
  
+
 <script setup>
 import Parallax from '../components/Parallax.vue'
+ 
 </script>
+ 

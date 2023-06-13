@@ -1,10 +1,13 @@
 <template>
     <div class="container">
-     
+ 
       <iframe class="content" frameborder="0" :src="url"></iframe>
     </div>
   </template>
   <script>
+
+ 
+
   export default {
     name: 'Intro',
     props: {

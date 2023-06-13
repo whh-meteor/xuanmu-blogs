@@ -1,3 +1,10 @@
+---
+title: CSS 波浪页脚
+description: CSS
+date: 2023-02-19
+tags:
+  - CSS
+---
 # CSS 波浪页脚
  
 <page-view :url="'../../www/CSS波浪页脚.html'" />
