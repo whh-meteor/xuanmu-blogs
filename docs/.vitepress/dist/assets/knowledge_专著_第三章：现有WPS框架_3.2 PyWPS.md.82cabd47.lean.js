@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.1e6b6c66.js";const P=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/专著_第三章：现有WPS框架/3.2 PyWPS.md"}'),o={name:"knowledge/专著_第三章：现有WPS框架/3.2 PyWPS.md"};function r(n,s,_,c,d,p){return t(),a("div")}const l=e(o,[["render",r]]);export{P as __pageData,l as default};

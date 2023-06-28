@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as _}from"./app.1e6b6c66.js";const X=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/专著_第四章：WPS服务实践/4.2 XXX分析服务.md"}'),a={name:"knowledge/专著_第四章：WPS服务实践/4.2 XXX分析服务.md"};function o(r,n,s,c,d,p){return t(),_("div")}const l=e(a,[["render",o]]);export{X as __pageData,l as default};
