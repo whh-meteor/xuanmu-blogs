@@ -1,1 +1,0 @@
-import{_ as e,o,c as t}from"./app.477d92f1.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/专著_第三章：现有WPS框架/(3.4)Zoo_Project.md"}'),r={name:"knowledge/专著_第三章：现有WPS框架/(3.4)Zoo_Project.md"};function a(_,c,n,s,d,p){return o(),t("div")}const m=e(r,[["render",a]]);export{l as __pageData,m as default};
