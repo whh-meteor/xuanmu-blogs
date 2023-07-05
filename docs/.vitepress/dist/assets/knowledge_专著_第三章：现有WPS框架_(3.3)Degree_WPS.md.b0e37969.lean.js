@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./app.fca0a3ef.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/专著_第三章：现有WPS框架/(3.3)Degree_WPS.md"}'),a={name:"knowledge/专著_第三章：现有WPS框架/(3.3)Degree_WPS.md"};function o(_,n,s,c,d,p){return t(),r("div")}const m=e(a,[["render",o]]);export{l as __pageData,m as default};
