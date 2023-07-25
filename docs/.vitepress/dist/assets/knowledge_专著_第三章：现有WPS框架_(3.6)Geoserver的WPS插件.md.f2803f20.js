@@ -1,1 +1,0 @@
-import{_ as e,o as r,c as t}from"./app.fca0a3ef.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/专著_第三章：现有WPS框架/(3.6)Geoserver的WPS插件.md"}'),o={name:"knowledge/专著_第三章：现有WPS框架/(3.6)Geoserver的WPS插件.md"};function a(s,_,n,c,d,p){return r(),t("div")}const m=e(o,[["render",a]]);export{l as __pageData,m as default};
