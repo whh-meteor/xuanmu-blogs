@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a,d as r}from"./app.37c2a8b0.js";const f=JSON.parse('{"title":"Mac 软件下载站点","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/01.资源分享/Mac资源下载站.md"}'),c={name:"knowledge/01.资源分享/Mac资源下载站.md"},n=r("",7),o=[n];function _(s,p,w,h,l,i){return t(),a("div",null,o)}const m=e(c,[["render",_]]);export{f as __pageData,m as default};

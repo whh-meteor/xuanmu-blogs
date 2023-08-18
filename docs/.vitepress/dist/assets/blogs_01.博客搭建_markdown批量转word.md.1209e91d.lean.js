@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,d as o}from"./app.37c2a8b0.js";const A=JSON.parse('{"title":"markdown批量转word","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/01.博客搭建/markdown批量转word.md"}'),l={name:"blogs/01.博客搭建/markdown批量转word.md"},p=o("",2),e=[p];function t(r,c,D,y,F,C){return n(),a("div",null,e)}const d=s(l,[["render",t]]);export{A as __pageData,d as default};
