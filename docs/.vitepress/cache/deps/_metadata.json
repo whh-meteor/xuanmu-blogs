@@ -1,36 +1,22 @@
 {
-<<<<<<< HEAD
   "hash": "7c048fa0",
   "browserHash": "4d05937d",
-=======
-  "hash": "2a3d5972",
-  "browserHash": "73aac2fd",
->>>>>>> 886233f44d10c9941e9920c6060863ea20dcda09
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-<<<<<<< HEAD
       "fileHash": "c27db5d9",
-=======
-      "fileHash": "7835f023",
->>>>>>> 886233f44d10c9941e9920c6060863ea20dcda09
       "needsInterop": false
     },
     "jquery": {
       "src": "../../../../node_modules/jquery/dist/jquery.js",
       "file": "jquery.js",
-<<<<<<< HEAD
       "fileHash": "1a4c715b",
-=======
-      "fileHash": "7e236842",
->>>>>>> 886233f44d10c9941e9920c6060863ea20dcda09
       "needsInterop": true
     },
     "lottie-web": {
       "src": "../../../../node_modules/lottie-web/build/player/lottie.js",
       "file": "lottie-web.js",
-<<<<<<< HEAD
       "fileHash": "2ee1d500",
       "needsInterop": true
     },
@@ -45,10 +31,6 @@
       "file": "dayjs_plugin_relativeTime.js",
       "fileHash": "bb77c379",
       "needsInterop": true
-=======
-      "fileHash": "9a9f546b",
-      "needsInterop": true
->>>>>>> 886233f44d10c9941e9920c6060863ea20dcda09
     }
   },
   "chunks": {
