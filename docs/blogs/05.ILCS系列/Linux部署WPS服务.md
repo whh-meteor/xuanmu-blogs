@@ -157,6 +157,24 @@ java builder 放入lib并挂载到docker中
 
 docker run --name wps -d -p 8087:8080 -v /opt/wanghaihang/warPackage:/usr/local/tomcat/webapps -v /opt/wanghaihang/lib:/usr/local/tomcat/lib  docker.io/tomcat:9.0.43
 
+
+
+cp -r lib/* warPackage
+
+cp -r webapps/javabuilder.jar  lib
+
+
+disk full 
+
+更换文件夹
+
+
+docker run --name wps2 -d -p 8088:8080 -v /home/wanghaihang/warPackage:/usr/local/tomcat/webapps -v /home/wanghaihang/Arithmetic:/usr/local/arithmetic  docker.io/tomcat:9.0.43
+
+
+
+
+
 ## 问题
 ### 高版本 tomcat webapp访问目录无权限
  cp -r webapps.dist/* webapps
@@ -209,3 +227,126 @@ c512137b74f3366da73ff80fc1fd232cc76c95b52a4bab01f1f5d89d28185b28
 执行：
 
 `chcon -Rt svirt_sandbox_file_t /home/XXXX/docker/tomcat/webapps/`
+
+
+chcon -Rt svirt_sandbox_file_t /home/wanghaihang/warPackage/ILCSData/
+
+
+
+
+
+
+
+## 安装本地tomcat
+
+
+ ./ startup.sh
+
+netstat -nltp | grep 8080
+
+启动后无法访问 如果在Linux上开启了防火墙，可能会阻止Tomcat的访问。可以通过以下命令关闭防火墙：
+
+systemctl stop firewalld
+
+关闭防火墙后，Tomcat能够正常访问，则需要针对Tomcat开启端口：
+
+```sh
+[root@localhost bin]# systemctl stop firewalld
+[root@localhost bin]# firewall-cmd --add-port=8080/tcp --permanent
+FirewallD is not running
+[root@localhost bin]# systemctl start firewalld
+[root@localhost bin]# firewall-cmd --add-port=8080/tcp --permanent
+success
+ 
+```
+
+
+
+## Linux重新打包jar包
+需要到Linux环境下编译成jar包，通用。Java是一次编写。不代表所有的class都能用。不同环境的机器需要重新编译。
+
+mcc -W 'java:matlab.CVAMulBands,Matlab' -a '/home/wanghaihang/matlab/*' -d '/home/wanghaihang/matlab/mcc' CVAMulBands.m
+
+
+
+## 虚拟机安装Linux CentOS7 
+
+### 安装Matlab
+
+目前 M1 芯片下 arm64 虚拟机无法安装matlabr2017a r2017b
+
+![](img/Linux部署WPS服务/img-2023-08-26-21-57-50.png)
+
+
+
+## centos安装Docker
+
+CentOS系统中安装Docker可以按照以下步骤进行：
+
+更新系统和安装所需依赖：
+
+sudo yum update
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+配置Docker的稳定仓库：
+
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+安装Docker：
+
+sudo yum install -y docker-ce
+
+启动Docker服务并设置为开机自启：
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+验证Docker安装是否成功：
+
+docker version
+
+如果以上步骤没问题并显示了Docker的版本信息，那么说明Docker已成功安装在CentOS系统中。
+
+如果您想使用Docker的话，可能还需要执行以下额外步骤：
+
+将当前用户加入docker用户组，以便于使用docker命令时无需使用sudo：
+
+sudo usermod -aG docker $USER
+
+退出当前终端会话并重新登录，使用户组的更改生效。
+
+验证docker命令是否可以使用无需sudo：
+
+docker run hello-world
+
+
+
+
+docker save -o ./matlab2022.tar mathworks/matlab:r2022b
+
+
+
+docker run --init -it --rm -p 5901:5901 -p 6080:6080 --shm-size=512M mathworks/matlab:r2022b -vnc
+
+
+docker commit --change 'ENTRYPOINT ["/bin/run.sh"]' 71e4e80b1677 matlabwithtoolboxes:r2022b
+
+挂载目录
+![](img/Linux部署WPS服务/img-2023-08-27-00-29-01.png)
+
+
+ docker run --init -it  -p 5902:5901 -p 6082:6080 -v D:\王海航-资料-勿动\4-ILCS开发资料\ILCS依赖环境\ILCS4MatlabService:/home/matlab/Documents/MATLAB --shm-size=512M matlabwithtoolboxes:r2022b -vnc
+
+
+
+
+ mcc -W 'java:matlab.CVAMulBands,Matlab' -a '/home/wanghaihang/Matlab/*' -d '/home/wanghaihang/Matlab/mcc' CVAMulBands.m
+
+
+ ### 安装jdk
+
+ 
+ sudo teamviewer --daenon start
+
+
+https://www.xjx100.cn/news/402563.html?action=onClick

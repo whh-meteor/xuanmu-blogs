@@ -1,0 +1,1 @@
+import{_ as t,o as r,c as e,d}from"./app.29115626.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/(1)专著_第一章：OGC WPS简介/1.3WPS规范.md"}'),a={name:"knowledge/(1)专著_第一章：OGC WPS简介/1.3WPS规范.md"},o=d("",2),i=[o];function s(n,c,l,_,f,g){return r(),e("div",null,i)}const S=t(a,[["render",s]]);export{h as __pageData,S as default};

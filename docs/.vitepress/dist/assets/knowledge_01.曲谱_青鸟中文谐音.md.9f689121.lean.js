@@ -1,0 +1,1 @@
+import{_ as p,o as e,c as t,d as a}from"./app.29115626.js";const m=JSON.parse('{"title":"青鸟中文谐音对照","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/01.曲谱/青鸟中文谐音.md"}'),_={name:"knowledge/01.曲谱/青鸟中文谐音.md"},r=a("",40),i=[r];function o(c,n,s,d,l,h){return e(),t("div",null,i)}const b=p(_,[["render",o]]);export{m as __pageData,b as default};
