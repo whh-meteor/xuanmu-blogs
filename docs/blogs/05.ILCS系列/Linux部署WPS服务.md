@@ -350,3 +350,112 @@ docker commit --change 'ENTRYPOINT ["/bin/run.sh"]' 71e4e80b1677 matlabwithtoolb
 
 
 https://www.xjx100.cn/news/402563.html?action=onClick
+
+
+
+## docker
+
+MacM1 安装Docker 提示Command not found
+用vim打开该文件
+~/.zprofile
+然后在文本最后插入下面这一行
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+然后写入并退出vim，执行下面这行来应用该环境变量
+source ~/.zprofile
+最后，执行docker --version，查看结果
+
+
+sudo docker build --platform linux/amd64 -t mcr2017_jdk8:v1 .
+
+
+
+### dockerfile
+```docker
+FROM adoptopenjdk/openjdk8:jre8u282-b08
+
+
+# ADD matlab.txt /mcr-install/matlab.txt
+# COPY MCR_R2017a_glnxa64_installer.zip /mcr-install/MCR_R2017a_glnxa64_installer.zip
+
+# RUN apt-get update && \
+# 	apt-get install -y curl wget unzip xorg && \
+# 	cd /mcr-install  && \
+# 	unzip MCR_R2017a_glnxa64_installer.zip && \
+# 	mkdir /opt/mcr && \
+# 	./install -inputFile matlab.txt && \
+# 	cd / && \
+# 	rm -rf mcr-install
+RUN apt-get update && \
+	apt-get install -y curl wget unzip xorg 
+ 
+RUN mkdir /usr/local/MATLAB
+
+RUN mkdir /usr/local/MATLAB/MATLAB_Runtime
+WORKDIR /usr/local/MATLAB
+COPY MCR_R2017a_glnxa64_installer.zip /usr/local/MATLAB
+
+RUN cd /usr/local/MATLAB
+RUN  unzip MCR_R2017a_glnxa64_installer.zip 
+RUN ./install -mode silent -agreeToLicense yes
+RUN rm -rf /usr/local/MATLAB
+ENV LD_LIBRARY_PATH /usr/local/MATLAB/MATLAB_Runtime/v92/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v92/bin/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v92/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v92/extern/bin/glnxa64
+ENV XAPPLRESDIR /usr/local/MATLAB/MATLAB_Runtime/v92/X11/app-defaults
+
+
+ADD ./apache-tomcat-9.0.34.tar.gz /usr/local
+ADD ./javabuilder.jar /usr/local/apache-tomcat-9.0.34/lib
+ADD ./wps.war /usr/local/apache-tomcat-9.0.34/webapps
+RUN mkdir /usr/local/apache-tomcat-9.0.34/webapps/ILCSData
+RUN mkdir /opt/lib
+
+ADD ./CVAMulBands.jar /opt/lib
+
+WORKDIR /usr/local
+ENV TOMCAT_HOME=/usr/local/apache-tomcat-9.0.34
+ENV PATH=$PATH:$TOMCAT_HOME/bin
+EXPOSE 8080
+CMD startup.sh && tail -F /usr/local/apache-tomcat-9.0.34/logs/catalina.out
+  
+```
+
+###  matlab在arm64下无法执行
+
+```docker
+
+FROM adoptopenjdk/openjdk8:jre8u282-b08
+
+
+ 
+RUN apt-get update && \
+	apt-get install -y curl wget unzip xorg && \
+    mkdir /usr/local/MATLAB && \
+	mkdir /usr/local/MATLAB/MATLAB_Runtime 
+	
+WORKDIR /usr/local/MATLAB
+COPY MCR_R2017a_glnxa64_installer.zip /usr/local/MATLAB
+
+RUN cd /usr/local/MATLAB && \
+	unzip MCR_R2017a_glnxa64_installer.zip  && \
+	./install -mode silent -agreeToLicense yes && \
+	rm   MCR_R2017a_glnxa64_installer.zip
+
+ENV LD_LIBRARY_PATH /usr/local/MATLAB/MATLAB_Runtime/v92/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v92/bin/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v92/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v92/extern/bin/glnxa64
+ENV XAPPLRESDIR /usr/local/MATLAB/MATLAB_Runtime/v92/X11/app-defaults
+
+
+ADD ./apache-tomcat-9.0.34.tar.gz /usr/local
+ADD ./javabuilder.jar /usr/local/apache-tomcat-9.0.34/lib
+ADD ./wps.war /usr/local/apache-tomcat-9.0.34/webapps
+
+WORKDIR /usr/local
+ENV TOMCAT_HOME=/usr/local/apache-tomcat-9.0.34
+ENV PATH=$PATH:$TOMCAT_HOME/bin
+RUN mkdir /usr/local/apache-tomcat-9.0.34/webapps/ILCSData  && \
+	mkdir /opt/lib
+ADD ./CVAMulBands.jar /opt/lib
+
+EXPOSE 8080
+CMD startup.sh && tail -F /usr/local/apache-tomcat-9.0.34/logs/catalina.out
+  
+
+```

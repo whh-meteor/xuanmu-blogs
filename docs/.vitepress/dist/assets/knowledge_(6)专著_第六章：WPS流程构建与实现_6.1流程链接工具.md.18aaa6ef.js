@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _}from"./app.d2608a1e.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/(6)专著_第六章：WPS流程构建与实现/6.1流程链接工具.md"}'),a={name:"knowledge/(6)专著_第六章：WPS流程构建与实现/6.1流程链接工具.md"};function o(r,n,s,c,d,p){return t(),_("div")}const m=e(a,[["render",o]]);export{l as __pageData,m as default};
