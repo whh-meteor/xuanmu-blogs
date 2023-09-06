@@ -459,3 +459,130 @@ CMD startup.sh && tail -F /usr/local/apache-tomcat-9.0.34/logs/catalina.out
   
 
 ```
+
+
+## 容器不足清理废弃镜像
+
+```sh
+
+[root@localhost /]# docker system prune
+WARNING! This will remove:
+        - all stopped containers
+        - all volumes not used by at least one container
+        - all networks not used by at least one container
+        - all dangling images
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+2f77f41a78d4562b3b952ede5e1f914f1f9748815417117e1dbe267311c84625
+4e0ebfbe34964053c5f3474a32bb6546e3f94d9e38730b6994e6d0e8f3355971
+0ee40870d0bd9c63801d3e0607341c7aebc595cd6c2743284b5b5e68a5a20736
+4757ea45f325ed2523324f931a6015657c3e9a7b0eabb00eb22b4b39d2a87c62
+f029ea4bf2c25d7962415733f9c80c31a1a6fc113f1a3a64da9683183fb23b28
+f55927dc01d653612c77d15ae8ab0f0e377d74d36b912c74d16a4afc333ced10
+portainer_db
+25ec614bcd741e79c712d4786dab5c0b24f028aa31c2f835a24bdcd018971078
+45a5acd1ea45503901d6fd778a012c7f5e5e0639bf29a52972358ca4eb0b365b
+e473236b5d2bc10afc89115fa308687f5c323b73e0bda674221a7a26c6270576
+f9a8be8a27154e2e481d873b334f5f4822595a5773c72978c4867d4a6800d559
+fd5f0fd72d0a947eba9041ac9fe74b1e944f06cbb1333b51b825b99582687c53
+0b888f102e65ef15a95aab410532782c25257a2f12f08b69dd418196d1fada11
+43107a8f99dbd0452992eb82f9fc593f1e2382a155b57a11033cbef35ee6323c
+758e9e1570116858f1262c8f4d61725f44a693be2a7e93580e9dc47781d5d304
+e9b67a5f95aa857ec4acc2031593930b5eb982f18ecc9230206ccb6f3190f435
+1ae7107d792dc0486c927fd66ec7755b2a141e6f9b8a812d89237b854895687e
+b08a9401cc8d0847e553792a3301256f591f98f64ad93e70b61962b081f55c43
+073a77c06cd7cb61c70861ca5a95e81f265b87f9ebb061168f0980e57d0ffb47
+e74c929cfb07e440fa319dfd93ff722e6c4bec33d43d1e1387979af493224a1b
+4765c2d52ee0162518c6757bece9c26b797041460d32e1228e9824309b848417
+4cc3f10b07ab4f6c1cf531323924972e1ad51a5162a32f556c9aeeed9f4d3046
+8dd8e9c898fc9d040c45e9b75a61ba1a20215c451cc5f126bd3b96189982ae25
+cca1414a12c7ad1f86c175d02c65ba30af6730905a1e0e0e3ccba1f8e7a22470
+2d1040eadebf504b43b9eb1c9dc3d513e27270d36bcae303dd40415682281c18
+8c5cb2365eb01542cb3d761c2dd2c853cb60d4c3e8f34b228e8aecc5b7917e1d
+26070861235fa8295c9913affd78072606fd3bcebd461b14f70516ce64291766
+4813db41e2eb4b4aad197e7ba9fbd648bbab4d91ff8ccc7a9d5adfccee66a978
+bc0eb896d8e334565f39a814fc07ca47d9a1e503342e85477a7afeaae80f811a
+81ef2af4e177d55973dc95d21ecf901e175d39718016d6462a6e1ab408f32639
+dd733ed9e98c2c4add0abb873875c53a2273c7a99d50613402bc0a55f021bd2b
+37a8d36fa4d46f12c98f5751c415b25afaced9980badea5e3bebe4972a465577
+f647d7e07ed9777146afefa66f0d4b788464bcc92deb2c4cd11d0e6fec8b090b
+db3e34455fb2bc103db95b0e95203f4ae138a61705259c6ceddc878fdaa91132
+4c8bd97edd46ff4be1a6670b93a5b943cb191e8920561d6bce2a8d8843e70f0d
+5ad355d434e2d67efae9af62d8d6a70c27afa54990e8d768516db150ae0bf74e
+ab8bcdeb47832b74b21308918e21501f45f8d47ad93fd5478660f3a490cda763
+cfdd8be8aea8145a628b8361b7d0b35d393039bc71b303693b6b947c8eaa7f03
+eb075afa9db89d5e295d8e8580973b70070fd56385d1177431435ecf4c6c0832
+336cd97a951d11454f751177a4f7ce765bfb289373250f67de6e014d1e2d4471
+47334748d3f9783b19e9ffb8369729356a8a7433bb0ff13d9a3421ff4a69cc38
+4ab96fe814b608441af726ee878a9963785e6e7b0977ea172e9d37b5139f7e04
+opt_db-data
+8736810a0a9dc33d54fbbb0fccb2df22c61b15dbe901290138011fb38b70c54b
+886ea9a437e1cdd24dbc24834da6241c0d3053090c7e33dd99ef22e947166da4
+88fa6f6b5ea3fe4e33d02a2b3e6a0514a87f98a9f0515e4d47b70fc733aba014
+a419378381890c40c55931d93405da071599d8ed90d2396730d5a4fc2a331746
+a5ad4f8b1abe866ea5dc8abedb321607773daa376f2cae69e4cd7da7ecc2dc54
+b479fbe1bf60c442b05bc06b3194b679b88860845d26675e678c6287dc788350
+d4298bc19bfa0a35d6ea433b339f536900d03bfab421452f3d76883116bbe246
+fe1e397e85044a31d3426acb28c0e32f8bf1da16cece7f06c620fdc0411b5a06
+23c47dd545413a6edff4e0944436f373dc208861584e9b4e120d26e33a4a8d14
+875efb17ea787569e3becba22355f949810c24f7838bbe5e5b69bb9d24f81b14
+
+Deleted Networks:
+root_default
+opt_default
+
+Total reclaimed space: 3.778 GB
+[root@localhost /]# 
+```
+
+
+
+
+## 问题：Dockfile中的CMD命令只对最后一条生效，因此使用sh脚本同时启动tomcat和jar
+```sh
+#!/bin/bash
+java -jar /opt/jarpackage/serviceback.jar > wps-1ogs.log 2>&1 &
+/usr/local/apache-tomcat-9.0.34/bin/startup.sh run &
+tail -F /usr/local/apache-tomcat-9.0.34/logs/catalina.out &
+tail -F /opt/jarpackage/wps-1ogs.log
+
+```
+
+然后再执行脚本 并且暴露端口号 ，要给sh脚本执行权限
+
+```docker
+COPY ./start.sh /opt/start.sh
+RUN chmod +x /opt/start.sh
+
+EXPOSE 8080
+EXPOSE 8003
+
+# CMD  startup.sh && tail -F /usr/local/apache-tomcat-9.0.34/logs/catalina.out 
+CMD ["/opt/start.sh"]
+ 
+```
+
+
+
+## 导出容器包-在服务上导入并执行
+docker save -o mcr_jdk_v20.tar mcr2017jdk8:v20
+
+docker load -i mcr_jdk_v20.tar
+
+ 
+
+docker run -d -p 8085:8080 -p 8086:8003 -v /home/wanghaihang/webapps:/usr/local/apache-tomcat-9.0.34/webapps -v /home/wanghaihang/jarpackage:/opt/jarpackage --restart=always
+
+
+
+ docker run -d -p 8085:8080 -p 8086:8003 -v /home/wanghaihang/webapps:/usr/local/apache-tomcat-9.0.34/webapps -v /home/wanghaihang/jarpackage:/opt/jarpackage -v /home/wanghaihang/lib:/opt/lib --restart=always mcr2017_jdk8:v20
+
+  docker run -d -p 8085:8080 -p 8086:8003 -v /home/wanghaihang/webapps:/usr/local/apache-tomcat-9.0.34/webapps -v /home/wanghaihang/jarpackage:/opt/jarpackage -v /home/wanghaihang/lib:/opt/lib -v /home/wanghaihang/lib:/opt/lib --restart=always mcr2017_jdk8:v20
+
+
+
+![](img/Linux部署WPS服务/img-2023-09-06-10-26-34.png)
+
+
+去掉char()重新编译
+k_('/home/wanghaihang/Matlab/clay_/clay_.tif','/home/wanghaihang/Matlab/clay_/sand_.tif','/home/wanghaihang/Matlab/clay_/silt_.tif','/home/wanghaihang/Matlab/clay_/soc_.tif','/home/wanghaihang/Matlab/clay_/res.tif')
