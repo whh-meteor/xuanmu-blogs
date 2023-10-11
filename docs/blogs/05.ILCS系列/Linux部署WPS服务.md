@@ -586,3 +586,7 @@ docker run -d -p 8085:8080 -p 8086:8003 -v /home/wanghaihang/webapps:/usr/local/
 
 去掉char()重新编译
 k_('/home/wanghaihang/Matlab/clay_/clay_.tif','/home/wanghaihang/Matlab/clay_/sand_.tif','/home/wanghaihang/Matlab/clay_/silt_.tif','/home/wanghaihang/Matlab/clay_/soc_.tif','/home/wanghaihang/Matlab/clay_/res.tif')
+
+
+
+docker run -d -p 8085:8080 -p 8086:8003 -v /home/wanghaihang/webapps:/usr/local/apache-tomcat-9.0.34/webapps -v /home/wanghaihang/jarpackage:/opt/jarpackage -v /home/wanghaihang/lib:/opt/lib -v /home/wanghaihang/lib:/opt/lib -v /home/wanghaihang/upload:/opt/upload --restart=always mcr_jdk_py:v23
